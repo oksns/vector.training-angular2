@@ -9,5 +9,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 
 })
 export class HomeComponent {
-
+  public items: string[] = [
+    'Math', 'IT', 'Physics', 'Spanish', 'Chemistry'
+  ];
 }

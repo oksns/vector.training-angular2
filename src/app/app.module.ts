@@ -28,6 +28,12 @@ import { GridModule } from '@progress/kendo-angular-grid';
 // Import DateInputsModule
 import { DateInputsModule } from '@progress/kendo-angular-dateinputs';
 
+// Import CharthsModule
+
+import {ChartsModule} from '@progress/kendo-angular-charts';
+
+// Import SortableModule
+import { SortableModule } from '@progress/kendo-angular-sortable';
 
 
 import 'hammerjs';
@@ -60,7 +66,9 @@ import 'hammerjs';
     ButtonsModule,
     InputsModule,
     GridModule,
-    DateInputsModule
+    DateInputsModule,
+    ChartsModule,
+    SortableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
