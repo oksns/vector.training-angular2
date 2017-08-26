@@ -1,0 +1,15 @@
+.home {
+  display: flex;
+  padding: 10px 50px;
+
+  &__block {
+
+    &._right-col {
+      margin-left: auto;
+
+      & + & {
+        margin-top: 20px;
+      }
+    }
+  }
+}

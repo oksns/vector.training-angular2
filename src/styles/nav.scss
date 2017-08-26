@@ -1,0 +1,22 @@
+.nav {
+  display: flex;
+  padding: 10px 60px;
+  background-color: #eeeeee;
+  border-bottom: 1px solid #cccccc;
+
+  &__item {
+    color: #ff6358;
+    text-decoration: none;
+    cursor: pointer;
+
+    & + & {
+      margin-left: 35px;
+    }
+
+    &._margin-left-auto {
+      margin-left: auto;
+    }
+  }
+
+
+}
