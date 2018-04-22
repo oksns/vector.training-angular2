@@ -12,6 +12,8 @@
 <div class="home">
   <div class="home__block _left-col">
     <h3>Chart</h3>
+    <div> debug: is chart visible: {{isCharsVisible}} </div>
+    <div> debug: roles{{chartComponentRoles}}</div>
     <kendo-chart>
       <kendo-chart-category-axis>
         <kendo-chart-category-axis-item
@@ -33,6 +35,8 @@
 
       <div class="message-box">
         <h3 class="message-box__title">Your messages</h3>
+        <div> debug: is messages visible: {{isMessagesVisible}} </div>
+        <div> debug: roles{{messageComponentRoles}}</div>
       </div>
 
       <div class="message-box">
@@ -48,6 +52,8 @@
 
     <div class="home__item">
       <h3>Range your lessons</h3>
+      <div> debug: is Range visible: {{isRangeVisible}} </div>
+      <div> debug: roles{{rangeComponentRoles}}</div>
       <div class="container-fluid">
         <kendo-sortable
           [navigatable]="true"
@@ -63,6 +69,8 @@
 
     <div class="home__item _margin-left">
       <h3>Your calendar</h3>
+      <div> debug: is calendar  visible: {{isCalendarVisible}} </div><br>
+      <div> debug: roles{{calendarComponentRoles}}</div>
       <kendo-calendar></kendo-calendar>
     </div>
 

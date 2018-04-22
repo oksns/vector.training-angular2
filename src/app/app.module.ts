@@ -12,6 +12,7 @@ import { MaterialsComponent } from './materials/materials.component';
 import { MaterialComponent } from './material/material.component';
 import { PageNotFoundComponent } from './page-not-found/pageNotFound.component';
 import { NavComponent } from './nav/nav.component';
+import { RoleshelperService } from './roleshelper.service';
 
 // Import the Animations module
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -70,7 +71,9 @@ import 'hammerjs';
     ChartsModule,
     SortableModule
   ],
-  providers: [],
+  providers: [
+    RoleshelperService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
