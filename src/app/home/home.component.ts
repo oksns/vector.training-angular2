@@ -26,7 +26,7 @@ export class HomeComponent {
   public isCalendarVisible = true;
   public calendarComponentRoles: string[] = [];
 
-  constructor(private rolesHelperService: RoleshelperService) { debugger; return;}
+  constructor(private rolesHelperService: RoleshelperService) {}
 
   ngOnInit() {
     console.log("dmlo");

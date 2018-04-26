@@ -38,6 +38,12 @@ import { SortableModule } from '@progress/kendo-angular-sortable';
 
 
 import 'hammerjs';
+import { ChartsComponentComponent } from './charts-component/charts-component.component';
+import { RangeComponentComponent } from './range-component/range-component.component';
+import { MessagesComponentComponent } from './messages-component/messages-component.component';
+import { CalendarComponentComponent } from './calendar-component/calendar-component.component';
+import { AbstractRolesComponentComponent } from './abstract-roles-component/abstract-roles-component.component';
+import { RolesSetterComponent } from './roles-setter/roles-setter.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +53,13 @@ import 'hammerjs';
     LoginComponent,
     PageNotFoundComponent,
     HomeComponent,
-    NavComponent
+    NavComponent,
+    ChartsComponentComponent,
+    RangeComponentComponent,
+    MessagesComponentComponent,
+    CalendarComponentComponent,
+    AbstractRolesComponentComponent,
+    RolesSetterComponent
   ],
   imports: [
     BrowserModule,
