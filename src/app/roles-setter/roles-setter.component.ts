@@ -8,13 +8,14 @@ import {RoleshelperService} from '../roleshelper.service';
 })
 export class RolesSetterComponent implements OnInit {
 
-  public userRoles: string[] = [];
+  public userRoles: String[] = [];
 
   constructor(private rolesHelperService: RoleshelperService) {}
 
   ngOnInit() {
     //todo make RW
-    this.userRoles = this.rolesHelperService.getUserRoles();
+    this.rolesHelperService.getUserRoles().subscribe(value => this.userRoles = value);
+    //this.userRoles = this.rolesHelperService.getUserRoles();
   }
 
   onRolesInputChange(event) {

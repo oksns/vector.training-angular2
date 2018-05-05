@@ -10,15 +10,19 @@ export class AbstractRolesComponentComponent implements OnInit {
 
   public isVisible = true;
   public componentRoles: string[] = [];
-  public userRoles: string[] = [];
+  public userRoles: String[] = [];
 
-  constructor(private rolesHelperService: RoleshelperService) { }
+  constructor(private rolesHelperService: RoleshelperService) { debugger}
 
   ngOnInit() {
     //todo make internal methods and make it observable
     this.componentRoles = this.rolesHelperService.getComponentRoles(this.constructor.name);
     this.isVisible = this.rolesHelperService.isComponentVisible(this.constructor.name);
-    this.userRoles = this.rolesHelperService.getUserRoles();
+    this.rolesHelperService.getUserRoles().subscribe(value =>
+     {this.userRoles = value;
+     this.isVisible = this.rolesHelperService.isComponentVisible(this.constructor.name);}
+    );
+    //this.userRoles = this.rolesHelperService.getUserRoles();
   }
 
 
