@@ -44,7 +44,7 @@ import { MessagesComponentComponent } from './messages-component/messages-compon
 import { CalendarComponentComponent } from './calendar-component/calendar-component.component';
 import { AbstractRolesComponentComponent } from './abstract-roles-component/abstract-roles-component.component';
 import { RolesSetterComponent } from './roles-setter/roles-setter.component';
-
+import { AdminToolComponent } from './admin-tool/admin-tool.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -59,7 +59,8 @@ import { RolesSetterComponent } from './roles-setter/roles-setter.component';
     MessagesComponentComponent,
     CalendarComponentComponent,
     AbstractRolesComponentComponent,
-    RolesSetterComponent
+    RolesSetterComponent,
+    AdminToolComponent
   ],
   imports: [
     BrowserModule,
@@ -70,8 +71,10 @@ import { RolesSetterComponent } from './roles-setter/roles-setter.component';
       {path: 'home', component: HomeComponent},
       {path: '', redirectTo: 'login', pathMatch: 'full'},
       {path: 'materials', component: MaterialsComponent},
+      {path: 'admin', component: AdminToolComponent},
       {path: '**', component: PageNotFoundComponent},
       {path: 'materials/:id', component: MaterialComponent}
+
     ]),
 
     // Register the modules
