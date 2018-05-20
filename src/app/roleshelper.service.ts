@@ -1,13 +1,15 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { of } from 'rxjs/observable/of';
-import {BehaviorSubject} from 'rxjs/BehaviorSubject';
-
+import { BehaviorSubject } from 'rxjs/BehaviorSubject';
+import { COMPONENT_ROLES } from './mock-componentRoles';
+import { ROLES_TREE } from './mock-RolesTree';
 @Injectable()
 export class RoleshelperService {
 
   public userRoles: BehaviorSubject<String[]> =  new  BehaviorSubject<String[]> (['user', 'employee']);
-
+  public componentsRoles = COMPONENT_ROLES;
+  public rolesTree = ROLES_TREE;
   constructor() { debugger}
 
 
@@ -25,23 +27,11 @@ export class RoleshelperService {
   // now it will we ChartsComponentComponent, RangeComponent, MessagesComponent and CalendarComponent
   // todo make name constant like ChartsComponentComponent for all
   getComponentRoles(componentName) {
-    //todo redevelop with map and mock object
-    if ('ChartsComponentComponent' == componentName) {
-      return ['employee'];
+    if (this.componentsRoles[componentName]) {
+      return this.componentsRoles[componentName];
+    } else {
+      return [];
     }
-
-    if ('RangeComponentComponent' == componentName) {
-      return ['user', 'employee'];
-    }
-
-    if ('MessagesComponentComponent' == componentName) {
-      return ['user', 'employee'];
-    }
-
-    if ('CalendarComponentComponent' == componentName) {
-      return ['user', 'employee'];
-    }
-    return [];
   }
 
 
@@ -49,6 +39,17 @@ export class RoleshelperService {
     var a = this.getComponentRoles(componentName);
     var b; //= this.getUserRoles();
     this.getUserRoles().subscribe(value => b = value);
+    for (let i = 0; i < a.length; i++) {
+      for (let j = 0; j < b.length; j++) {
+        if (a[i] == b[j]) return true;
+      }
+    }
+    return false;
+  }
+
+  isComponentVisibleForRoles(componentName, roles) {
+    var a = this.getComponentRoles(componentName);
+    var b = roles;
     for (let i = 0; i < a.length; i++) {
       for (let j = 0; j < b.length; j++) {
         if (a[i] == b[j]) return true;
