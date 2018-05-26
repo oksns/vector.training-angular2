@@ -11,7 +11,7 @@ export class AdminToolComponent implements OnInit {
   componentsList: string[];
   dataTable;
 
-  constructor(private rolesHelperService: RoleshelperService) { debugger;}
+  constructor(private rolesHelperService: RoleshelperService) {}
 
   ngOnInit() {
     this.componentsList = [];
