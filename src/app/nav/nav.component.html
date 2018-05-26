@@ -1,26 +1,44 @@
-<div class="nav">
-    <a [routerLink]="['/home']" class="nav__item ">
+<nav id="main_nav">
+  <ul>
+    <li class="menu_ref_item">
+      <a [routerLink]="['/home']">
         HOME
-    </a>
+      </a>
+    </li>
+    <li class="menu_ref_item">
+      <a>VIEW</a>
+    </li>
+    <li class="menu_ref_item">
+      <a>QUESTIONS BANK</a>
+    </li>
+    <li class="menu_ref_item">
+      <a>ROLES</a>
+    </li>
+    <li class="menu_ref_item">
+      <a>COURSES</a>
+    </li>
 
-    <a class="nav__item">VIEW</a>
+    <li class="menu_ref_item">
+      <a>DEPARTMENTS</a>
+    </li>
 
-    <a class="nav__item">QUESTIONS BANK</a>
-
-    <a class="nav__item">ROLES</a>
-
-    <a class="nav__item">COURSES</a>
-
-    <a class="nav__item">DEPARTMENTS</a>
-
-
-  <a [routerLink]="['/materials']" class="nav__item">
+    <li class="menu_ref_item">
+      <a [routerLink]="['/materials']">
         MATERIALS
-    </a>
+      </a>
+    </li>
 
-  <a class="nav__item _margin-left-auto">change theme</a>
-    <a [routerLink]="['/login']" class="nav__item">
+    <li class="menu_ref_item">
+      <a>change theme</a>
+    </li>
+
+    <li class="menu_ref_item">
+      <a [routerLink]="['/login']">
         LOG OUT
-    </a>
-</div>
+      </a>
+    </li>
+
+  </ul>
+
+</nav>
 

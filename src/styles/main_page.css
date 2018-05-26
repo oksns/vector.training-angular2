@@ -1,0 +1,487 @@
+﻿/**************************************
+VECTOR MAIN PAGE STYLES STARTED
+**************************************/
+
+/***********************************************
+Screen 1200px+
+***********************************************/
+
+/*Basic content parts styling*/
+.content_part{
+    background: #ebebeb;
+    padding-top: 10px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.content_part.with_bg { /*with specific background*/
+    background-image: url('../images/container_bg.png');
+    background-position: top center;
+    -ms-background-size: cover;
+    background-size: cover;
+}
+
+.content_part .block_title{
+    color: #385191;
+    margin: 0 10px 10px 10px;
+}
+.content_part .block_title i{
+    color: #395aa1;
+}
+
+/*Schedule styles*/
+#schedule .schedule_controls{
+    display: table;
+    width: 100%;
+}
+#schedule .schedule_controls > div{
+    display: table-cell;
+    background: #385191;
+    padding: 15px;
+    vertical-align: middle;
+}
+#schedule .timings_after{
+    display: none;
+}
+#schedule .schedule_controls .schedule_title{
+    width: 85%;
+    cursor: pointer;
+}
+#schedule .schedule_controls .schedule_title *{
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+#schedule .schedule_controls .schedule_context{
+    /*border: 1px solid #92278f;*/
+    width: 15%;
+}
+#schedule .schedule_controls .schedule_context *{
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+#schedule .timings_box .timing{
+    border-bottom: 1px solid #395aa1;
+    width: 100%;
+    display: table;
+}
+#schedule .timings_box .timing > div{
+    padding: 5px 0;
+    text-align: center;
+    display: table-cell;
+    height: 60px;
+    vertical-align: middle;
+    font-size: .8em;
+    overflow: hidden;
+}
+#schedule .timings_box .timing > div *{
+    vertical-align: middle;
+}
+#schedule .timings_box .timing .context_control{
+    background: #92278f;
+    border-left: 2px solid #395aa1;
+    width: 10%;
+    cursor: pointer;
+}
+#schedule .timings_box .timing .context_control .control{
+    color: #fff;
+}
+#schedule .timings_box .timing .subject_and_type{
+    background: #ebebeb;
+    width: 35%;
+}
+#schedule .timings_box .timing .subject_and_type .subject{
+    color: #385191;
+}
+#schedule .timings_box .timing .teacher_and_place{
+    background: #ebebeb;
+    width: 40%;
+}
+#schedule .timings_box .timing .period{
+    /*background: #395aa1;
+    border-left: 2px solid #395aa1;
+    border-right: 2px solid #395aa1;
+    color: #fff;*/
+    width: 15%;
+}
+#schedule .timings_box .timings_after .timing:last-child .period{
+    border-bottom: 2px solid #6acae1;
+}
+
+/*reports styles*/
+.reports-block .schedule_controls{
+    display: table;
+    width: 100%;
+}
+.reports-block .schedule_controls > div{
+    display: table-cell;
+    background: #385191;
+    padding: 15px;
+    vertical-align: middle;
+}
+.reports-block .timings_after{
+    display: none;
+}
+.reports-block .schedule_controls .schedule_title{
+    width: 85%;
+    cursor: pointer;
+}
+.reports-block .schedule_controls .schedule_title *{
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+.reports-block .schedule_controls .schedule_context{
+    /*border: 1px solid #92278f;*/
+    width: 15%;
+}
+.reports-block .schedule_controls .schedule_context *{
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.reports-block .timings_box .timing{
+    border-bottom: 1px solid #395aa1;
+    width: 100%;
+    display: table;
+}
+.reports-block .timings_box .timing > div{
+    padding: 5px 0;
+    text-align: center;
+    display: table-cell;
+    height: 60px;
+    vertical-align: middle;
+    font-size: .8em;
+    overflow: hidden;
+}
+.reports-block .timings_box .timing > div *{
+    vertical-align: middle;
+}
+.reports-block .timings_box .timing .context_control{
+    background: #92278f;
+    border-left: 2px solid #395aa1;
+    width: 10%;
+    cursor: pointer;
+}
+.reports-block .timings_box .timing .context_control .control{
+    color: #fff;
+}
+.reports-block .timings_box .timing .teacher_and_place{
+    background: #ebebeb;
+    width: 90%;
+}
+
+/*Courses styles*/
+#courses_inner{
+    padding: 15px 0;
+}
+#courses_chain{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/*temporary commented to fix later!!!! new styles are undeder comment block!!!*/
+
+/*#courses_chain{
+  overflow: hidden;
+  width: 100%;
+}
+#courses_chain li{
+  float: left;
+  margin: 0 .5em 0 1em;
+  vertical-align: middle;
+}
+#courses_chain li *{
+    vertical-align: middle;
+}
+#courses_chain li a{
+  background: #ddd;
+  padding: .7em 1em;
+  float: left;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+#courses_chain li .dot{
+    font-size: 8px;
+    padding: 0 10px;
+}
+#courses_chain li a:hover{
+    color: #92278f;
+}
+#courses_chain li:not(:first-child) a::before{
+  content: "";
+  position: absolute;
+  top: 50%; 
+  margin-top: -1.5em;   
+  border-width: 1.5em 0 1.5em 1em;
+  border-style: solid;
+  left: -1em;
+}
+#courses_chain li a::after{
+  content: "";
+  position: absolute;
+  top: 50%; 
+  margin-top: -1.5em;   
+  border-top: 1.5em solid transparent;
+  border-bottom: 1.5em solid transparent;
+  border-left: 1em solid #ddd;
+  right: -1em;
+}
+#courses_chain li:nth-child(1) a{
+    background: #395aa1;
+}
+#courses_chain li:nth-child(2) a{
+    background: #395aa1;
+}
+#courses_chain li:nth-child(3) a{
+    background: #395aa1;
+}
+#courses_chain li:nth-child(4) a{
+    background: #64aabd;
+}
+#courses_chain li:nth-child(1) a:before{
+    border-color: #395aa1 #395aa1 #395aa1 transparent;
+}
+#courses_chain li:nth-child(2) a:before{
+    border-color: #395aa1 #395aa1 #395aa1 transparent;
+}
+#courses_chain li:nth-child(3) a:before{
+    border-color: #395aa1 #395aa1 #395aa1 transparent;
+}
+#courses_chain li:nth-child(4) a:before{
+    border-color: #64aabd #64aabd #64aabd transparent;
+}
+#courses_chain li:nth-child(1) a:after{
+    border-left-color: #395aa1;
+}
+#courses_chain li:nth-child(2) a:after{
+    border-left-color: #395aa1;
+}
+#courses_chain li:nth-child(3) a:after{
+    border-left-color: #395aa1;
+}
+#courses_chain li:nth-child(4) a:after{
+    border-left-color: #64aabd;
+}*/
+
+
+/*NEW temporary courses chain*/
+#courses_chain{
+  overflow: hidden;
+  width: 100%;
+}
+#courses_chain li{
+  float: left;
+  margin: .5em .5em 0 1em;
+  vertical-align: middle;
+}
+#courses_chain li *{
+    vertical-align: middle;
+}
+    #courses_chain li a {
+        background: #385191;
+        padding: .7em 1em;
+        float: left;
+        color: #fff;
+        text-decoration: none;
+        position: relative;
+    }
+#courses_chain li .dot{
+    font-size: 8px;
+    padding: 0 10px;
+}
+#courses_chain li a:hover{
+    color: #92278f;
+}
+    #courses_chain li a::after,
+    #courses_chain li a::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 1em;
+        background: #385191;
+        -webkit-transform: skew(-15deg);
+        -moz-transform: skew(-15deg);
+        -o-transform: skew(-15deg);
+        -ms-transform: skew(-15deg);
+        transform: skew(-15deg);
+    }
+#courses_chain li a::before{
+    left: -.5em;
+}
+#courses_chain li a::after{
+    right: -.5em;   
+}
+
+/*end of new temporary courses chain*/
+
+/*Useful Info styles*/
+#useful_info .useful_info_container{
+    padding: 0 10px 10px 10px;
+}
+#useful_info .useful_info_container .useful_info_row, #useful_info .useful_info_container .useful_info_headers{
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid #ebebeb;
+}
+#useful_info .useful_info_container .useful_info_row > div, #useful_info .useful_info_container .useful_info_headers > div{
+    float: left;
+}
+#useful_info .useful_info_container .useful_info_row *, #useful_info .useful_info_container .useful_info_headers *{
+    vertical-align: middle;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    /*"color: #fff;*/
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+#useful_info .useful_info_container .useful_info_headers *{
+    text-align: center;
+}
+#useful_info .useful_info_container .info_num{
+    text-align: center;
+    width: 5%;
+    background: #92278f;
+}
+#useful_info .useful_info_container .info_title, #useful_info .useful_info_container .info_content{
+    background: #395aa1;
+    padding: 0 40px;
+}
+#useful_info .useful_info_container .info_content a{
+    text-decoration: none;
+    display: inherit;
+}
+#useful_info .useful_info_container .info_content a:hover{
+    color: #92278f;
+}
+#useful_info .useful_info_container .info_title{
+    width: 35%;
+    border-right: 1px solid #92278f;
+}
+#useful_info .useful_info_container .info_content{
+    width: 60%;
+}
+/*#useful_info .useful_info_container .useful_info_row .info_content{
+    -webkit-transition: background .2s ease-in-out;
+    -moz-transition: background .2s ease-in-out;
+    -o-transition: background .2s ease-in-out;
+    -ms-transition: background .2s ease-in-out;
+    transition: background .2s ease-in-out;
+}
+#useful_info .useful_info_container .useful_info_row .info_content:hover{
+    background: #395aa1;
+}*/
+/*useful info modal_details*/
+.modal_info_details .info_props{
+    padding-bottom: 10px;
+    width: 100%;
+    display: inline-block;
+    border-bottom: 1px solid #395aa1;
+}
+.modal_info_details .info_publication_date, .modal_info_details .info_author{
+    float: left;
+    display: inline-block;
+    width: 50%;
+}
+.modal_info_details .info_publication_date > span, .modal_info_details .info_author > span{
+    color: #92278f;
+}
+.modal_info_details .info_author{
+    text-align: right;
+}
+.modal_info_details .info_files{
+    width: 100%;
+}
+.modal_info_details .info_files a.info_file_link{
+    margin: 0 10px 10px 0;
+    display: inline-block;
+}
+.modal_info_details .info_files a.info_file_link img.info_file{
+    width: auto;
+    height: auto;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+/*---------------------------------------------*/
+
+/***********************************************
+Screen Smaller than 1199px
+***********************************************/
+@media only screen and (min-width:960px) and (max-width: 1199px) {
+
+}
+
+/***********************************************
+Tablet (Smaller than 959px)
+***********************************************/
+@media only screen and (min-width:768px) and (max-width: 959px) {
+
+}
+
+/***********************************************
+Mobile (portrait 300px)
+***********************************************/
+@media only screen and (max-width:767px) {
+
+}
+
+/***********************************************
+Mobile (landscape 420px)
+***********************************************/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    #useful_info .useful_info_container *{
+        font-size: .9em;
+    }
+    #useful_info .useful_info_container .info_title, #useful_info .useful_info_container .info_content{
+        padding: 0 10px;
+    }
+}
+
+/***********************************************
+VECTOR STYLES FOR SMALL SCREENS
+***********************************************/
+@media only screen and (max-width: 479px) {
+    #mini_message_inbox .messages_list .message_info{
+        -webkit-transition: none;
+        -moz-transition: none;
+        -o-transition: none;
+        -ms-transition: none;
+        transition: none;
+    }
+    #mini_message_inbox #messages_slider .message_list_item.current .message_info{
+        margin: 0;
+        box-shadow: none;
+    }
+    #mini_message_inbox #messages_slider .message_list_item.faded .message_info{
+        opacity: 1;
+    }
+    #useful_info .useful_info_container *{
+        font-size: .9em;
+    }
+    #useful_info .useful_info_container .info_title, #useful_info .useful_info_container .info_content{
+        padding: 0 5px;
+    }
+    #useful_info .useful_info_container .info_title{
+        display: none;
+    }
+    #useful_info .useful_info_container .info_num{
+        width: 15%;
+    }
+    #useful_info .useful_info_container .info_content{
+        width: 85%;
+    }
+}
+
+/**************************************
+END OF VECTOR MAIN PAGE STYLES
+**************************************/
