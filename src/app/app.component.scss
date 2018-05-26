@@ -1,11 +1,12 @@
 //Libs
 @import "~@progress/kendo-theme-default/scss/all";
-// @import "../styles/normalize.css";
+@import "../styles/normalize.css";
 
 //vector
 @import "../styles/base.css";
 @import "../styles/layout.css";
 @import "../styles/main_page.css";
+@import "../styles/amazium.css";
 
 
 //Common
@@ -16,4 +17,4 @@
 @import "../styles/login";
 @import "../styles/material";
 @import "../styles/message-box";
-//@import "../styles/nav";
+@import "../styles/nav";
