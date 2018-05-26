@@ -29,7 +29,11 @@ export class AdminToolComponent implements OnInit {
   }
 
   addTableRow( role, level) {
-    let result = [level, role.name];
+    let spacer = '';
+    for (let i = 0; i <= level; i++) {
+      spacer += '→';
+    }
+    let result = [level, spacer + role.name];
     for (let comp of this.componentsList) {
       result.push(this.rolesHelperService.isComponentVisibleForRoles(comp, [role.name]));
     }

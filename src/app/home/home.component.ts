@@ -10,9 +10,7 @@ import {RoleshelperService} from '../roleshelper.service';
 
 })
 export class HomeComponent {
-  public items: string[] = [
-    'Math', 'IT', 'Physics', 'Spanish', 'Chemistry', 'russian'
-  ];
+
 
   public isCharsVisible = true;
   public chartComponentRoles: string[] = [];

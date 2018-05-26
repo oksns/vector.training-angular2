@@ -7,5 +7,7 @@ import {AbstractRolesComponentComponent} from '../abstract-roles-component/abstr
   styleUrls: ['./range-component.component.scss']
 })
 export class RangeComponentComponent extends AbstractRolesComponentComponent {
-
+  public items: string[] = [
+    'Math', 'IT', 'Physics', 'Spanish', 'Chemistry', 'russian'
+  ];
 }

@@ -36,20 +36,24 @@ export class RoleshelperService {
 
 
   isComponentVisible(componentName) {
-    var a = this.getComponentRoles(componentName);
-    var b; //= this.getUserRoles();
+    let b; //= this.getUserRoles();
     this.getUserRoles().subscribe(value => b = value);
-    for (let i = 0; i < a.length; i++) {
-      for (let j = 0; j < b.length; j++) {
-        if (a[i] == b[j]) return true;
-      }
-    }
-    return false;
+    return this.isComponentVisibleForRoles(componentName, b);
   }
 
   isComponentVisibleForRoles(componentName, roles) {
-    var a = this.getComponentRoles(componentName);
-    var b = roles;
+    let a = this.getComponentRoles(componentName);
+    let b = [];
+    for (let i = 0; i < roles.length; i++) {
+      b.push(roles[i]);
+    }
+    for (let i=0; i < b.length; i++) {
+      for (let j=0; j < this.rolesTree.length; j++) {
+        if (b[i] == this.rolesTree[j].parent) {
+          b.push(this.rolesTree[j].name);
+        }
+      }
+    }
     for (let i = 0; i < a.length; i++) {
       for (let j = 0; j < b.length; j++) {
         if (a[i] == b[j]) return true;
