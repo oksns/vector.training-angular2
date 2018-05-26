@@ -1,16 +1,26 @@
-<form class="login-wrapper">
-
-  <h2 class="login">Please, login with your credentials</h2>
-
-  <div class="login__input">
-    <div>Login:</div>
-    <kendo-maskedtextbox [(value)]="loginInput"></kendo-maskedtextbox>
+<section class="row body">
+  <div class="grid_12">
+    <div class="page_header">
+      <h2>Форма входа</h2>
+    </div>
   </div>
+  <div class="grid_12">
+    <div class="container">
+      <div id="auth_form"></div>
+      <form class="login-wrapper">
 
-  <div class="login__input">
-    <div>Password:</div>
-    <kendo-maskedtextbox [(value)]="passwordInput"></kendo-maskedtextbox>
+        <div class="login__input">
+          <div>Login:</div>
+          <kendo-maskedtextbox [(value)]="loginInput"></kendo-maskedtextbox>
+        </div>
+
+        <div class="login__input">
+          <div>Password:</div>
+          <kendo-maskedtextbox [(value)]="passwordInput"></kendo-maskedtextbox>
+        </div>
+
+        <button kendoButton type="submit" (click)="onButtonClick(loginInput, passwordInput, login, password)" [primary]="true" [routerLink]="['/home']">LOGIN</button>
+      </form>
+    </div>
   </div>
-
-  <button kendoButton type="submit" (click)="onButtonClick(loginInput, passwordInput, login, password)" [primary]="true" [routerLink]="['/home']">LOGIN</button>
-</form>
+</section>
