@@ -1,0 +1,25 @@
+.nav {
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: middle;
+  color: #8c8b8b;
+  line-height: 50px;
+  -webkit-transform: skewX(20deg);
+  -moz-transform: skewX(20deg);
+  -o-transform: skewX(20deg);
+  -ms-transform: skewX(20deg);
+  transform: skewX(20deg);
+  -webkit-transition: color .2s ease-in-out;
+  -moz-transition: color .2s ease-in-out;
+  -o-transition: color .2s ease-in-out;
+  -ms-transition: color .2s ease-in-out;
+  transition: color .2s ease-in-out;
+
+  &:hover {
+    color: #a6a5a5;
+  }
+}
+
+.item {
+  width: 30vw;
+}

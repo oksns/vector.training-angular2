@@ -3,7 +3,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 @Component({
   selector: 'login-root',
   templateUrl: './login.component.html',
-  styleUrls: ['../app.component.scss', '../../../node_modules/@progress/kendo-theme-default/dist/all.css'],
+  styleUrls: ['../app.component.scss'],
   encapsulation: ViewEncapsulation.None
 
 

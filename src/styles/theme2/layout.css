@@ -1,0 +1,743 @@
+/**************************************
+VECTOR LAYOUT STYLES STARTED
+**************************************/
+@import '../../fonts/WebFonts/font_faces.css'; /*import font-faces styles*/
+
+
+/***********************************************
+Screen 1200px+
+***********************************************/
+body{
+  background: url('../../images/back3_old.jpg') top center no-repeat fixed;
+  background-size: cover;
+  font-family: 'RobotoRegular', Arial, Verdana, sans-serif;
+  font-size: 16px;
+  color: #385191;
+}
+*.fl_left{
+  float: left;
+}
+*.fl_right{
+  float: right;
+}
+*.cl_b{
+  clear: both;
+}
+*.bold{
+  font-family: 'RobotoBold';
+}
+*.italic{
+  font-family: 'RobotoItalic';
+}
+*.oblique{
+  font-family: 'RobotoItalic';
+}
+*.light{
+  font-family: 'RobotoLight';
+}
+*.mini_text{
+  font-size: 12px;
+}
+div.notification{
+  display: inline-block;
+  width: 100%;
+  clear: both;
+  color: #92278f;
+  padding: 10px;
+}
+img.vector_image{
+  width: 100%;
+  height: auto;
+}
+a{
+  color: #385191;
+  -webkit-transition: color .2s ease-in-out;
+  -moz-transition: color .2s ease-in-out;
+  -o-transition: color .2s ease-in-out;
+  -ms-transition: color .2s ease-in-out;
+  transition: color .2s ease-in-out;
+}
+a:hover{
+  color: #92278f;
+}
+.header,
+.body,
+.footer {
+  background: #ffffff;
+  background: rgba(255,255,255,1);
+}
+
+.header{
+  padding-top: 5px;
+  padding-bottom: 30px;
+}
+.footer{
+  background: #395aa1;
+  text-align: center;
+  color: #fff;
+}
+.logo{
+  background: url('../../images/logo.png') left center no-repeat;
+  background-size: 100%;
+  text-indent: -9999px;
+  height: 90px;
+}
+.additional_logo{
+  background: url('../../images/additional_logo.png') left center no-repeat;
+  background-size: 100%;
+  text-indent: -9999px;
+  height: 90px;
+}
+#main_nav{
+  width: 100%;
+  margin-top: 5px;
+  background: transparent;
+  border-top: 2px solid #385191;
+  border-bottom: 2px solid #385191;
+}
+#main_nav ul{
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  /*gradients are not still animatable!*/
+  /*-webkit-transition: background .2s ease-in-out;
+  -moz-transition: background .2s ease-in-out;
+  -o-transition: background .2s ease-in-out;
+  -ms-transition: background .2s ease-in-out;
+  transition: background .2s ease-in-out;*/
+}
+/*gradients are not still animatable!*/
+/*#main_nav ul.gradient_fix{
+    background: -webkit-linear-gradient(left, #395aa1 0%, #fff 10%);
+    background: -moz-linear-gradient(left, #395aa1 0%, #fff 10%);
+    background: -o-linear-gradient(left, #395aa1 0%, #fff 10%);
+    background: -ms-linear-gradient(left, #395aa1 0%, #fff 10%);
+    background: linear-gradient(left, #395aa1 0%, #fff 10%);
+}*/
+#main_nav ul li{
+  list-style: none;
+  margin: 0;
+  height: 50px;
+  float: left;
+  text-align: center;
+}
+
+/*First and Last li's edges background fixes*/
+#main_nav ul li.menu_ref_item:first-child:before
+  /*#main_nav ul li.menu_ref_item:nth-child(6):after*/{ /*nth-child(6) the only way to do this simply*/
+  content: ' ';
+  width: 20px;
+  height: 50px;
+  display: inline-block;
+  position: absolute;
+  background: #fff;
+  -webkit-transform: skewX(20deg);
+  -moz-transform: skewX(20deg);
+  -o-transform: skewX(20deg);
+  -ms-transform: skewX(20deg);
+  transform: skewX(20deg);
+  -webkit-transition: background .2s ease-in-out;
+  -moz-transition: background .2s ease-in-out;
+  -o-transition: background .2s ease-in-out;
+  -ms-transition: background .2s ease-in-out;
+  transition: background .2s ease-in-out;
+}
+#main_nav ul li.menu_ref_item:first-child:before{
+  left: 0;
+}
+#main_nav ul li.menu_ref_item:nth-child(6):after{ /*nth-child(6) the only way to do this simply*/
+  /*width: 50px;*/
+}
+#main_nav ul li.menu_ref_item:first-child:hover:before
+  /*#main_nav ul li.menu_ref_item:nth-child(6):hover:after*/{ /*nth-child(6) the only way to do this simply*/
+  background: #395aa1;
+}
+/*End First and Last li's edges background fixes*/
+
+#main_nav ul li.menu_ref_item{
+  width: 10%;
+  background: #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+  -webkit-transition: background .2s ease-in-out;
+  -moz-transition: background .2s ease-in-out;
+  -o-transition: background .2s ease-in-out;
+  -ms-transition: background .2s ease-in-out;
+  transition: background .2s ease-in-out;
+}
+#main_nav ul li.menu_ref_item:hover{
+  background: #395aa1;
+}
+/*#main_nav ul li:last-child{
+    width: 28%;
+    line-height: 47px;
+    background: #fff !important;
+}*/
+/**/
+/*I dont know why '#main_nav ul li.menu_ref_item:not(:last-child):after' below doesn't work... damn...*/
+/**/
+#main_nav ul li.menu_ref_item::after{
+  content: '|';
+  float: right;
+  line-height: 50px;
+  color: inherit;
+  -webkit-transition: color .2s ease-in-out;
+  -moz-transition: color .2s ease-in-out;
+  -o-transition: color .2s ease-in-out;
+  -ms-transition: color .2s ease-in-out;
+  transition: color .2s ease-in-out;
+}
+#main_nav ul li.menu_ref_item:last-child::after {
+  content: none;
+}
+#main_nav ul li.menu_ref_item:hover:after{
+  color: #6077af;
+}
+#main_nav ul li a{
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: middle;
+  color: #8c8b8b;
+  line-height: 50px;
+  -webkit-transform: skewX(20deg);
+  -moz-transform: skewX(20deg);
+  -o-transform: skewX(20deg);
+  -ms-transform: skewX(20deg);
+  transform: skewX(20deg);
+  -webkit-transition: color .2s ease-in-out;
+  -moz-transition: color .2s ease-in-out;
+  -o-transition: color .2s ease-in-out;
+  -ms-transition: color .2s ease-in-out;
+  transition: color .2s ease-in-out;
+}
+#main_nav ul li:hover a{
+  color: #a6a5a5;
+}
+.main_search_wrapper{
+  display: inline-block;
+  vertical-align: middle;
+  width: 70%;
+}
+.main_search_wrapper.mobile{
+  width: 100%;
+}
+.main_search_wrapper .main_search{
+  height: 35px;
+  background: #ebebeb;
+  line-height: normal;
+  color: #395aa1;
+  border: none !important;
+  display: inline-block;
+  float: left;
+  width: 85%;
+  text-align: left;
+}
+.main_search_wrapper .button_search{
+  margin: 0;
+  padding: 0;
+  background: #385191;
+  color: #fff;
+  float: left;
+  font-family: FontAwesome;
+  width: 15%;
+  display: inline-block;
+  height: 35px;
+  line-height: 31px;
+  border: 2px solid #898d8a;
+}
+.main_search::-webkit-input-placeholder { /* WebKit browsers */
+  color:    #395aa1;
+}
+.main_search:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color:    #395aa1;
+  opacity:  1;
+}
+.main_search::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color:    #395aa1;
+  opacity:  1;
+}
+.main_search:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color:    #395aa1;
+}
+.auth .auth_block{
+  border-bottom: 1px solid #92278f;
+  display: table;
+  table-layout: fixed;
+  height: 40px;
+  padding-bottom: 5px;
+  width: 100%;
+  max-width: 100%;
+}
+.auth .auth_block a{
+  text-decoration: none;
+}
+.auth .auth_block > div{
+  display: table-cell;
+  /*width: 50%;*/
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: center;
+  height: 100%;
+  vertical-align: bottom;
+}
+.auth .auth_block > div:nth-child(1){
+  width: 60%;
+  max-width: 60%;
+}
+.auth .auth_block > div:nth-child(2):before{
+  content: '/';
+  float: left;
+}
+.auth .auth_block > div:nth-child(2){
+  width: 40%;
+}
+.auth .auth_block form{
+  margin: 0;
+}
+input[type=text],
+input[type=number],
+input[type=tel],
+input[type=password],
+input[type=email],
+input[type=date],
+textarea{
+  line-height: 20px; /*normalizing line-height in textarea*/
+  box-shadow: none;
+  -webkit-transition: box-shadow .2s ease-in-out;
+  -moz-transition: box-shadow .2s ease-in-out;
+  -o-transition: box-shadow .2s ease-in-out;
+  -ms-transition: box-shadow .2s ease-in-out;
+  transition: box-shadow .2s ease-in-out;
+}
+input[type=text]:focus,
+input[type=number]:focus,
+input[type=tel]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=date]:focus,
+textarea:focus {
+  box-shadow: 0 0 5px 1px #4edbfd;
+}
+/*razor validation summary errors styles*/
+form .validation-summary-errors ul{
+  margin: 0;
+  color: #92278f;
+  list-style-position: inside;
+}
+
+/*vector custom validate success and errors styles*/
+/*textboxes, textareas e.t.c*/
+form small.error_text,
+form small.success_text{
+  width: auto;
+  margin: 0;
+  display: none;
+  float: left;
+  color: #fff;
+}
+form small.error_text{
+  background: #92278f;
+}
+form small.success_text{
+  background: #429d8e;
+}
+form small.error_text i.invalid,
+form small.success_text i.valid{
+  margin-right: 3px;
+}
+form input.invalid,
+form textarea.invalid{
+  border: 1px solid #92278f;
+}
+form input.valid,
+form textarea.valid{
+  border: 1px solid #429d8e;
+}
+/*checkboxes and radios*/
+form .vector_checks-radios ~ small.error_text{
+  background: transparent;
+  color: #92278f;
+}
+form .vector_checks-radios ~ small.success_text{
+  background: transparent;
+  color: #429d8e;
+}
+
+.iradio_square-aero > input[type="radio"] {
+  opacity: 0 !important;
+}
+
+/*Pgw modal custom styles*/
+.custom_pgw_modal .pm-title{
+  background: #92278f;
+  border-radius: 0;
+  border-bottom: 1px solid #395aa1;
+  color: #fff;
+}
+.custom_pgw_modal .pm-content{
+  border-radius: 0;
+}
+/*alertify prompts and dialog custon styles*/
+.alertify{
+  border-radius: 0;
+  border: 5px solid #395aa1;
+  box-shadow: 0 0 10px 2px rgba(0,0,0,0.5);
+}
+.alertify-button, .alertify-button:hover, .alertify-button:active{
+  border-radius: 0;
+}
+.alertify-button-ok, .alertify-button-ok:hover, .alertify-button-ok:focus{
+  background-color: #429d8e;
+  border: 1px solid #255850;
+  color: #fff;
+}
+.alertify-button-cancel, .alertify-button-cancel:hover, .alertify-button-cancel:focus{
+  background-color: #92278f;
+  border: 1px solid #5d1c33;
+  color: #fff;
+}
+
+/*spinner_loader for ajax loading styles in modal popus*/
+.spinner_loader {
+  margin: 10px auto;
+  width: 60px;
+  height: 60px;
+  position: relative;
+}
+
+.spinner_loader .cube1, .spinner_loader .cube2 {
+  background-color: #92278f;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  -webkit-animation: cubemove 1.8s infinite ease-in-out;
+  animation: cubemove 1.8s infinite ease-in-out;
+}
+
+.spinner_loader .cube2 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+@-webkit-keyframes cubemove {
+  25% { -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5) }
+  50% { -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg) }
+  75% { -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5) }
+  100% { -webkit-transform: rotate(-360deg) }
+}
+
+@keyframes cubemove {
+  25% {
+    transform: translateX(42px) rotate(-90deg) scale(0.5);
+    -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
+  } 50% {
+      transform: translateX(42px) translateY(42px) rotate(-179deg);
+      -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
+    } 50.1% {
+        transform: translateX(42px) translateY(42px) rotate(-180deg);
+        -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
+      } 75% {
+          transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+          -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+        } 100% {
+            transform: rotate(-360deg);
+            -webkit-transform: rotate(-360deg);
+          }
+}
+/*spinner overlay for ajax loading styles on whole page*/
+.spinner_overlay{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  min-width: 100%;
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+  text-align: center;
+  background: rgba(255, 255, 255, .7);
+}
+.spinner_overlay .spinner_loader{
+  margin: 10% auto 0%;
+}
+.spinner_overlay .spinner_text{
+  color: #92278f;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+/*override some base styles*/
+/*.btn class changes*/
+.btn.white{
+  border: 1px solid #bbb;
+  background-color: #fff;
+  color: #395aa1;
+}
+.btn.white:hover{
+  border: 1px solid #395aa1;
+  background-color: #395aa1;
+  color: #fff;
+}
+/*vector checks and radios clearings*/
+.vector_checks-radios{
+  margin: 5px 0;
+}
+.vector_checks-radios input{
+  margin: 0;
+  padding: 0;
+  float: none;
+  clear: both;
+  vertical-align: middle;
+  line-height: normal;
+}
+.vector_checks-radios label{
+  float: none;
+  width: auto;
+  height: auto;
+  clear: both;
+  vertical-align: middle;
+  line-height: normal;
+  margin: 0;
+  padding: 0 10px;
+  cursor: pointer;
+  text-align: left;
+  color: inherit;
+}
+/*button, that performs scroll to top on click*/
+#scroll_to_top {
+  display: none;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #92278f;
+  background: rgba(235,237,239, .7); /*#ebebeb*/
+  border: 1px solid #395aa1;
+  bottom: 2%;
+  right: 2%;
+  -webkit-transition: background .2s ease-in-out;
+  -moz-transition: background .2s ease-in-out;
+  -o-transition: background .2s ease-in-out;
+  -ms-transition: background .2s ease-in-out;
+  transition: background .2s ease-in-out;
+}
+#scroll_to_top:hover {
+  background: rgba(235,237,239, 1); /*#ebebeb*/
+}
+/*space divs with clearings*/
+div.space_30px{
+  height: 30px;
+  clear: both;
+  background: transparent;
+  float: none;
+  width: 100%;
+  display: block;
+}
+/*common styles for all pages*/
+.container {
+  background: #ebebeb;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 30px;
+  position: static ;
+}
+.container.with_bg{ /*container with specific background*/
+  background-image: url('../../images/container_bg.png');
+  background-position: center;
+  background-size: contain;
+}
+.page_header {
+  background: #385191;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 3px;
+}
+.page_header h2 {
+  color: #fff;
+  text-align: center;
+}
+.link_helper a{
+  text-decoration: none;
+}
+.link_helper a:before{
+  content: '\f105';
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2em;
+  color: #395aa1;
+  text-decoration: inherit;
+  padding-right: 10px;
+  -webkit-transition: padding-right .2s ease-in-out;
+  -moz-transition: padding-right .2s ease-in-out;
+  -o-transition: padding-right .2s ease-in-out;
+  -ms-transition: padding-right .2s ease-in-out;
+  transition: padding-right .2s ease-in-out;
+}
+.link_helper a:hover:before{
+  padding-right: 3px;
+}
+/*styles fo submit button in forms*/
+form input[type=submit].btn_submit, input[type=button].btn_submit{
+  background: transparent;
+  border: 2px solid #92278f;
+  text-align: center;
+  color: #92278f;
+  line-height: 36px;
+  width: 100%;
+  font-size: 1em;
+  top: 0;
+  margin: 0;
+  height: 100%; /*for responsiveness, if value of button is to large*/
+  white-space: normal; /*for responsiveness, if value of button is to large*/
+  -webkit-transition: background .2s ease-in-out, color .2s ease-in-out, top .2s ease-in-out;
+  -moz-transition: background .2s ease-in-out, color .2s ease-in-out, top .2s ease-in-out;
+  -o-transition: background .2s ease-in-out, color .2s ease-in-out, top .2s ease-in-out;
+  -ms-transition: background .2s ease-in-out, color .2s ease-in-out, top .2s ease-in-out;
+  transition: background .2s ease-in-out, color .2s ease-in-out, top .2s ease-in-out;
+}
+form input[type=submit].btn_submit:hover, input[type=button].btn_submit:hover{
+  background: #92278f;
+  color: #fff;
+}
+form input[type=submit].btn_submit:active, input[type=button].btn_submit:active{
+  top: 2px;
+}
+/*styles for btn submit progress animation*/
+form .btn_submit_progress{
+  position: relative;
+  background: #fff;
+  width: 0;
+  height: 0;
+}
+form .btn_submit_progress .btn_submit{
+  color: #92278f;
+}
+form .btn_submit_progress.active{
+
+}
+
+/*some base styles for custom file blocks in the forms with nidefile*/
+form div.custom_file_block{
+  margin-bottom: 5px;
+}
+form div.custom_file_block input[type=button].fileInputButton{
+  color: #385191;
+}
+form div.custom_file_block input[type=text].fileInputText,
+form div.custom_file_block .fileWrapper{
+  float: left;
+}
+form div.custom_file_block .remove_attachment{
+  cursor: pointer;
+  float: left;
+  line-height: 36px;
+  margin-left: 5px;
+}
+/*--------------------------------------------*/
+
+/***********************************************
+Screen Smaller than 1199px
+***********************************************/
+@media only screen and (min-width:960px) and (max-width: 1199px) {
+  #main_nav ul li.menu_ref_item:nth-child(6):after{
+    width: 35px;
+  }
+}
+
+/***********************************************
+Tablet (Smaller than 959px)
+***********************************************/
+@media only screen and (min-width:768px) and (max-width: 959px) {
+  #main_nav ul li{
+    display: inline-block;
+    -webkit-transform:none;
+    -moz-transform:none;
+    -o-transform:none;
+    -ms-transform:none;
+    transform:none;
+  }
+  #main_nav ul li:after{
+    content: ' ';
+    display: none;
+    -webkit-transform:none;
+    -moz-transform:none;
+    -o-transform:none;
+    -ms-transform:none;
+    transform:none;
+
+  }
+  #main_nav ul li.menu_ref_item:nth-child(6):after{
+    width: 25px;
+  }
+}
+
+/***********************************************
+Mobile (portrait 300px)
+***********************************************/
+@media only screen and (max-width:767px) {
+  body{
+    background-size: contain;
+    background-repeat: repeat;
+  }
+  .header{
+    margin-top: 50px;
+  }
+  .body,
+  .footer{
+    margin-top: 30px;
+  }
+  #main_nav{
+    display: none;
+  }
+}
+
+/***********************************************
+Mobile (landscape 420px)
+***********************************************/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .header{
+    margin-top: 50px;
+  }
+  .body,
+  .footer{
+    margin-top: 30px;
+  }
+  #main_nav{
+    display: none;
+  }
+  .auth .auth_block{
+    width: 40%;
+  }
+}
+
+/***********************************************
+VECTOR STYLES FOR SMALL SCREENS
+***********************************************/
+@media only screen and (max-width: 479px) {
+  .header{
+    margin-top: 50px;
+  }
+  .body,
+  .footer{
+    margin-top: 30px;
+  }
+  #main_nav{
+    display: none;
+  }
+}
+
+/**************************************
+END OF VECTOR LAYOUT STYLES
+**************************************/
+

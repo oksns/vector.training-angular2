@@ -1,0 +1,20 @@
+//Libs
+@import "~@progress/kendo-theme-default/scss/all";
+@import "../styles/theme2/normalize.css";
+
+//vector
+@import "../styles/theme2/base.css";
+@import "../styles/theme2/layout.css";
+@import "../styles/theme2/main_page.css";
+@import "../styles/theme2/amazium.css";
+
+
+//Common
+//Please, import files in alphabet order
+@import "../styles/theme2/error";
+@import "../styles/theme2/home";
+@import "../styles/theme2/kendo-item";
+@import "../styles/theme2/login";
+@import "../styles/theme2/material";
+@import "../styles/theme2/message-box";
+@import "../styles/theme2/nav";

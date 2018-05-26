@@ -1,0 +1,21 @@
+.message-box {
+  display: flex;
+  align-items: center;
+  width: 97%;
+  margin: 10px;
+
+  &__text {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    color: #b8b8b8;
+    min-height: 100px;
+    background-color: #f6f6f6;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+  }
+
+  &__title {
+    text-align: center;
+  }
+}
