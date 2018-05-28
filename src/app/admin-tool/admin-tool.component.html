@@ -13,11 +13,20 @@
       </th>
     </thead>
     <tbody>
-      <tr *ngFor="let row of dataTable">
-        <td *ngFor="let compVisibility of row">
-          {{compVisibility}}
-        </td>
-      </tr>
+    <tr *ngFor="let row of dataTable">
+      <td *ngFor="let compVisibility of row; let i = index">
+        <ng-container *ngIf="i > 1">
+          <input *ngIf="row[i]" type="checkbox" checked (click)="onCheckBoxClick(row, componentsList, i, true)">
+          <input *ngIf="!row[i]" type="checkbox" (click)="onCheckBoxClick(row, componentsList, i, true)">
+        </ng-container>
+        <ng-container *ngIf="i == 0">
+          {{row[i]}}
+        </ng-container>
+        <ng-container *ngIf="i==1">
+          {{row[i]}}
+        </ng-container>
+      </td>
+    </tr>
     </tbody>
   </table>
 </section>

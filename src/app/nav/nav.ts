@@ -1,29 +1,37 @@
 export const nav = [{
-  'title': 'HOME',
-  'route': '/home'
-},
+    'title': 'HOME',
+    'route': '/home',
+    'compname': 'NavBarHome'
+  },
   {
     'title': 'QUESTIONS',
-    'route': ''
+    'route': '',
+    'compname': 'NavBarQuestions'
+
   },
   {
     'title': 'ROLES',
-    'route': ''
+    'route': '',
+    'compname': 'NavBarRoles'
   },
   {
     'title': 'COURSES',
-    'route': ''
+    'route': '',
+    'compname': 'NavBarCourses'
   },
   {
     'title': 'DEPARTMENTS',
-    'route': ''
+    'route': '',
+    'compname': 'NavBarDepartments'
   },
   {
     'title': 'MATERIALS',
-    'route': '/materials'
+    'route': '/materials',
+    'compname': 'NavBarMaterials'
   },
   {
     'title': 'ADMIN TOOL',
-    'route': '/admin'
+    'route': '/admin',
+    compname: 'NavBarAdminTool'
   }
 ];
