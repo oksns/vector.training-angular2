@@ -1,20 +1,23 @@
-<table>
-  <thead>
-    <th>
-      X
-    </th>
-    <th>
-      X
-    </th>
-    <th *ngFor="let componentName of componentsList">
-      {{componentName}}
-    </th>
-  </thead>
-  <tbody>
-    <tr *ngFor="let row of dataTable">
-      <td *ngFor="let compVisibility of row">
-        {{compVisibility}}
-      </td>
-    </tr>
-  </tbody>
-</table>
+<nav-root></nav-root>
+<section class="row body">
+  <table>
+    <thead>
+      <th>
+        X
+      </th>
+      <th>
+        X
+      </th>
+      <th *ngFor="let componentName of componentsList">
+        {{componentName}}
+      </th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of dataTable">
+        <td *ngFor="let compVisibility of row">
+          {{compVisibility}}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>
