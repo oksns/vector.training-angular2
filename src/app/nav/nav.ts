@@ -1,0 +1,29 @@
+export const nav = [{
+  'title': 'HOME',
+  'route': '/home'
+},
+  {
+    'title': 'QUESTIONS',
+    'route': ''
+  },
+  {
+    'title': 'ROLES',
+    'route': ''
+  },
+  {
+    'title': 'COURSES',
+    'route': ''
+  },
+  {
+    'title': 'DEPARTMENTS',
+    'route': ''
+  },
+  {
+    'title': 'MATERIALS',
+    'route': '/materials'
+  },
+  {
+    'title': 'LOG OUT',
+    'route': '/login'
+  }
+];

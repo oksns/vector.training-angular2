@@ -1,4 +1,5 @@
 import { Component, ViewEncapsulation } from '@angular/core';
+import { nav } from './nav';
 
 @Component({
   selector: 'nav-root',
@@ -9,5 +10,5 @@ import { Component, ViewEncapsulation } from '@angular/core';
 
 })
 export class NavComponent {
-
+  public nav: any[] = nav;
 }
