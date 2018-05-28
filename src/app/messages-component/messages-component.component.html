@@ -1,9 +1,10 @@
-<div class="home__item">
+<div class="component-wrapper" [ngClass] = "{'_visible': isVisible}">
+  <div class="home__item">
 
   <div class="message-box">
     <h3 class="message-box__title">Your messages</h3>
-    <div> debug: is messages visible: {{isVisible}} </div>
-    <div> debug: roles{{componentRoles}}</div>
+    <!--<div> debug: is messages visible: {{isVisible}} </div>
+    <div> debug: roles{{componentRoles}}</div>-->
   </div>
 
   <div class="message-box">
@@ -12,4 +13,5 @@
     </div>
   </div>
 
+</div>
 </div>

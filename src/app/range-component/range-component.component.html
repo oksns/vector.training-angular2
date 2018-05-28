@@ -1,16 +1,18 @@
-<div class="home__item">
-  <h3>Range your lessons</h3>
-  <div> debug: is Range visible: {{isVisible}} </div>
-  <div> debug: roles{{componentRoles}}</div>
-  <div class="container-fluid">
-    <kendo-sortable
-      [navigatable]="true"
-      [animation]="true"
-      [data]="items"
-      class="row"
-      itemClass="item col-xs-6 col-sm-3"
-      activeItemClass="item col-xs-6 col-sm-3 active"
-    >
-    </kendo-sortable>
+<div class="component-wrapper" [ngClass] = "{'_visible': isVisible}">
+  <div class="home__item">
+    <h3>Range your lessons</h3>
+   <!-- <div> debug: is Range visible: {{isVisible}} </div>
+    <div> debug: roles{{componentRoles}}</div>-->
+    <div class="container-fluid">
+      <kendo-sortable
+        [navigatable]="true"
+        [animation]="true"
+        [data]="items"
+        class="row"
+        itemClass="item col-xs-6 col-sm-3"
+        activeItemClass="item col-xs-6 col-sm-3 active"
+      >
+      </kendo-sortable>
+    </div>
   </div>
 </div>
