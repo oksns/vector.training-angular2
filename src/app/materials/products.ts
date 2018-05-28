@@ -1,392 +1,123 @@
 export const sampleProducts = [
   {
-    "ProductID": 1,
-    "ProductName": "Chai",
-    "SupplierID": 1,
-    "CategoryID": 1,
-    "QuantityPerUnit": "10 boxes x 20 bags",
-    "UnitPrice": 18,
-    "UnitsInStock": 39,
-    "UnitsOnOrder": 0,
-    "ReorderLevel": 10,
-    "Discontinued": false,
-    "Category": {
-      "CategoryID": 1,
-      "CategoryName": "Beverages",
-      "Description": "Soft drinks, coffees, teas, beers, and ales"
-    },
-    "FirstOrderedOn": new Date(1996, 8, 20)
+    'MaterialID': 1,
+    'MaterialName': 'Partnership',
+    'SubMaterials' : [
+      {'id': 1,
+        'content': 'video1'
+      },
+      {'id': 2,
+      'content': 'video2'
+      },
+      {'id': 3,
+        'content': 'video3'
+      },
+      {'id': 4,
+        'content': 'article'
+      },
+      {'id': 5,
+        'content': 'material1'
+      },
+      {'id': 6,
+        'content': 'material2'
+      },
+      {'id': 7,
+        'content': 'material3'
+      },
+      ],
   },
   {
-    "ProductID": 2,
-    "ProductName": "Chang",
-    "SupplierID": 1,
-    "CategoryID": 1,
-    "QuantityPerUnit": "24 - 12 oz bottles",
-    "UnitPrice": 19,
-    "UnitsInStock": 17,
-    "UnitsOnOrder": 40,
-    "ReorderLevel": 25,
-    "Discontinued": false,
-    "Category": {
-      "CategoryID": 1,
-      "CategoryName": "Beverages",
-      "Description": "Soft drinks, coffees, teas, beers, and ales"
-    },
-    "FirstOrderedOn": new Date(1996, 7, 12)
+    'MaterialID': 2,
+    'MaterialName': 'Products',
+    'SubMaterials' : [
+      {'id': 1,
+        'content': 'video5 '
+      },
+      {'id': 2,
+        'content': 'article2  '
+      },
+      {'id': 3,
+        'content': 'article3  '
+      }
+    ],
   },
   {
-    "ProductID": 3,
-    "ProductName": "Aniseed Syrup",
-    "SupplierID": 1,
-    "CategoryID": 2,
-    "QuantityPerUnit": "12 - 550 ml bottles",
-    "UnitPrice": 10,
-    "UnitsInStock": 13,
-    "UnitsOnOrder": 70,
-    "ReorderLevel": 25,
-    "Discontinued": false,
-    "Category": {
-      "CategoryID": 2,
-      "CategoryName": "Condiments",
-      "Description": "Sweet and savory sauces, relishes, spreads, and seasonings"
-    },
-    "FirstOrderedOn": new Date(1996, 8, 26)
+    'MaterialID': 3,
+    'MaterialName': 'About company',
+    'SubMaterials' : [
+      {'id': 1,
+        'content': 'article4  '
+      },
+      {'id': 2,
+        'content': 'video5 '
+      },
+      {'id': 3,
+        'content': 'video10 '
+      }
+    ],
   },
   {
-    "ProductID": 4,
-    "ProductName": "Chef Anton's Cajun Seasoning",
-    "SupplierID": 2,
-    "CategoryID": 2,
-    "QuantityPerUnit": "48 - 6 oz jars",
-    "UnitPrice": 22,
-    "UnitsInStock": 53,
-    "UnitsOnOrder": 0,
-    "ReorderLevel": 0,
-    "Discontinued": false,
-    "Category": {
-      "CategoryID": 2,
-      "CategoryName": "Condiments",
-      "Description": "Sweet and savory sauces, relishes, spreads, and seasonings"
-    },
-    "FirstOrderedOn": new Date(1996, 9, 19)
+    'MaterialID': 4,
+    'MaterialName': 'Products and Solutions',
+    'SubMaterials' : [
+      {'id': 1,
+        'content': 'article2  '
+      },
+      {'id': 2,
+        'content': 'video21 '
+      },
+      {'id': 3,
+        'content': 'video22 '
+      }
+    ],
   },
   {
-    "ProductID": 5,
-    "ProductName": "Chef Anton's Gumbo Mix",
-    "SupplierID": 2,
-    "CategoryID": 2,
-    "QuantityPerUnit": "36 boxes",
-    "UnitPrice": 21.35,
-    "UnitsInStock": 0,
-    "UnitsOnOrder": 0,
-    "ReorderLevel": 0,
-    "Discontinued": true,
-    "Category": {
-      "CategoryID": 2,
-      "CategoryName": "Condiments",
-      "Description": "Sweet and savory sauces, relishes, spreads, and seasonings"
-    },
-    "FirstOrderedOn": new Date(1996, 7, 17)
-  },
-  {
-    "ProductID": 6,
-    "ProductName": "Grandma's Boysenberry Spread",
-    "SupplierID": 3,
-    "CategoryID": 2,
-    "QuantityPerUnit": "12 - 8 oz jars",
-    "UnitPrice": 25,
-    "UnitsInStock": 120,
-    "UnitsOnOrder": 0,
-    "ReorderLevel": 25,
-    "Discontinued": false,
-    "Category": {
-      "CategoryID": 2,
-      "CategoryName": "Condiments",
-      "Description": "Sweet and savory sauces, relishes, spreads, and seasonings"
-    },
-    "FirstOrderedOn": new Date(1996, 9, 19)
-  },
-  {
-    "ProductID": 7,
-    "ProductName": "Uncle Bob's Organic Dried Pears",
-    "SupplierID": 3,
-    "CategoryID": 7,
-    "QuantityPerUnit": "12 - 1 lb pkgs.",
-    "UnitPrice": 30,
-    "UnitsInStock": 15,
-    "UnitsOnOrder": 0,
-    "ReorderLevel": 10,
-    "Discontinued": false,
-    "Category": {
-      "CategoryID": 7,
-      "CategoryName": "Produce",
-      "Description": "Dried fruit and bean curd"
-    },
-    "FirstOrderedOn": new Date(1996, 7, 22)
-  },
-  {
-    "ProductID": 8,
-    "ProductName": "Northwoods Cranberry Sauce",
-    "SupplierID": 3,
-    "CategoryID": 2,
-    "QuantityPerUnit": "12 - 12 oz jars",
-    "UnitPrice": 40,
-    "UnitsInStock": 6,
-    "UnitsOnOrder": 0,
-    "ReorderLevel": 0,
-    "Discontinued": false,
-    "Category": {
-      "CategoryID": 2,
-      "CategoryName": "Condiments",
-      "Description": "Sweet and savory sauces, relishes, spreads, and seasonings"
-    },
-    "FirstOrderedOn": new Date(1996, 11, 1)
-  },
-  {
-    "ProductID": 9,
-    "ProductName": "Mishi Kobe Niku",
-    "SupplierID": 4,
-    "CategoryID": 6,
-    "QuantityPerUnit": "18 - 500 g pkgs.",
-    "UnitPrice": 97,
-    "UnitsInStock": 29,
-    "UnitsOnOrder": 0,
-    "ReorderLevel": 0,
-    "Discontinued": true,
-    "Category": {
-      "CategoryID": 6,
-      "CategoryName": "Meat/Poultry",
-      "Description": "Prepared meats"
-    },
-    "FirstOrderedOn": new Date(1997, 1, 21)
-  },
-  {
-    "ProductID": 10,
-    "ProductName": "Ikura",
-    "SupplierID": 4,
-    "CategoryID": 8,
-    "QuantityPerUnit": "12 - 200 ml jars",
-    "UnitPrice": 31,
-    "UnitsInStock": 31,
-    "UnitsOnOrder": 0,
-    "ReorderLevel": 0,
-    "Discontinued": false,
-    "Category": {
-      "CategoryID": 8,
-      "CategoryName": "Seafood",
-      "Description": "Seaweed and fish"
-    },
-    "FirstOrderedOn": new Date(1996, 8, 5)
+    'MaterialID': 5,
+    'MaterialName': 'Sales and Pre-Sales Academy',
+    'SubMaterials' : [
+      {'id': 1,
+        'content': 'article5  '
+      },
+      {'id': 2,
+        'content': 'article6  '
+      },
+      {'id': 3,
+        'content': 'article7  '
+      }
+    ],
   }
 ];
 
 export const products = [{
-  "ProductID": 1,
-  "ProductName": "Chai",
-  "SupplierID": 1,
-  "CategoryID": 1,
-  "QuantityPerUnit": "10 boxes x 20 bags",
-  "UnitPrice": 18.0000,
-  "UnitsInStock": 39,
-  "UnitsOnOrder": 0,
-  "ReorderLevel": 10,
-  "Discontinued": false,
-  "Category": {
-    "CategoryID": 1,
-    "CategoryName": "Beverages",
-    "Description": "Soft drinks, coffees, teas, beers, and ales"
+  'ProductID': 1,
+  'ProductName': 'Chai',
+  'SupplierID': 1,
+  'CategoryID': 1,
+  'QuantityPerUnit': '10 boxes x 20 bags',
+  'UnitPrice': 18.0000,
+  'UnitsInStock': 39,
+  'UnitsOnOrder': 0,
+  'ReorderLevel': 10,
+  'Discontinued': false,
+  'Category': {
+    'CategoryID': 1,
+    'CategoryName': 'Beverages',
+    'Description': 'Soft drinks, coffees, teas, beers, and ales'
   }
 }, {
-  "ProductID": 2,
-  "ProductName": "Chang",
-  "SupplierID": 1,
-  "CategoryID": 1,
-  "QuantityPerUnit": "24 - 12 oz bottles",
-  "UnitPrice": 19.0000,
-  "UnitsInStock": 17,
-  "UnitsOnOrder": 40,
-  "ReorderLevel": 25,
-  "Discontinued": false,
-  "Category": {
-    "CategoryID": 1,
-    "CategoryName": "Beverages",
-    "Description": "Soft drinks, coffees, teas, beers, and ales"
-  }
-}, {
-  "ProductID": 3,
-  "ProductName": "Aniseed Syrup",
-  "SupplierID": 1,
-  "CategoryID": 2,
-  "QuantityPerUnit": "12 - 550 ml bottles",
-  "UnitPrice": 10.0000,
-  "UnitsInStock": 13,
-  "UnitsOnOrder": 70,
-  "ReorderLevel": 25,
-  "Discontinued": false,
-  "Category": {
-    "CategoryID": 2,
-    "CategoryName": "Condiments",
-    "Description": "Sweet and savory sauces, relishes, spreads, and seasonings"
-  }
-}, {
-  "ProductID": 4,
-  "ProductName": "Chef Anton's Cajun Seasoning",
-  "SupplierID": 2,
-  "CategoryID": 2,
-  "QuantityPerUnit": "48 - 6 oz jars",
-  "UnitPrice": 22.0000,
-  "UnitsInStock": 53,
-  "UnitsOnOrder": 0,
-  "ReorderLevel": 0,
-  "Discontinued": false,
-  "Category": {
-    "CategoryID": 2,
-    "CategoryName": "Condiments",
-    "Description": "Sweet and savory sauces, relishes, spreads, and seasonings"
-  }
-}, {
-  "ProductID": 5,
-  "ProductName": "Chef Anton's Gumbo Mix",
-  "SupplierID": 2,
-  "CategoryID": 2,
-  "QuantityPerUnit": "36 boxes",
-  "UnitPrice": 21.3500,
-  "UnitsInStock": 0,
-  "UnitsOnOrder": 0,
-  "ReorderLevel": 0,
-  "Discontinued": true,
-  "Category": {
-    "CategoryID": 2,
-    "CategoryName": "Condiments",
-    "Description": "Sweet and savory sauces, relishes, spreads, and seasonings"
-  }
-}, {
-  "ProductID": 6,
-  "ProductName": "Grandma's Boysenberry Spread",
-  "SupplierID": 3,
-  "CategoryID": 2,
-  "QuantityPerUnit": "12 - 8 oz jars",
-  "UnitPrice": 25.0000,
-  "UnitsInStock": 120,
-  "UnitsOnOrder": 0,
-  "ReorderLevel": 25,
-  "Discontinued": false,
-  "Category": {
-    "CategoryID": 2,
-    "CategoryName": "Condiments",
-    "Description": "Sweet and savory sauces, relishes, spreads, and seasonings"
-  }
-}, {
-  "ProductID": 7,
-  "ProductName": "Uncle Bob's Organic Dried Pears",
-  "SupplierID": 3,
-  "CategoryID": 7,
-  "QuantityPerUnit": "12 - 1 lb pkgs.",
-  "UnitPrice": 30.0000,
-  "UnitsInStock": 15,
-  "UnitsOnOrder": 0,
-  "ReorderLevel": 10,
-  "Discontinued": false,
-  "Category": {
-    "CategoryID": 7,
-    "CategoryName": "Produce",
-    "Description": "Dried fruit and bean curd"
-  }
-}, {
-  "ProductID": 8,
-  "ProductName": "Northwoods Cranberry Sauce",
-  "SupplierID": 3,
-  "CategoryID": 2,
-  "QuantityPerUnit": "12 - 12 oz jars",
-  "UnitPrice": 40.0000,
-  "UnitsInStock": 6,
-  "UnitsOnOrder": 0,
-  "ReorderLevel": 0,
-  "Discontinued": false,
-  "Category": {
-    "CategoryID": 2,
-    "CategoryName": "Condiments",
-    "Description": "Sweet and savory sauces, relishes, spreads, and seasonings"
-  }
-}, {
-  "ProductID": 9,
-  "ProductName": "Mishi Kobe Niku",
-  "SupplierID": 4,
-  "CategoryID": 6,
-  "QuantityPerUnit": "18 - 500 g pkgs.",
-  "UnitPrice": 97.0000,
-  "UnitsInStock": 29,
-  "UnitsOnOrder": 0,
-  "ReorderLevel": 0,
-  "Discontinued": true,
-  "Category": {
-    "CategoryID": 6,
-    "CategoryName": "Meat/Poultry",
-    "Description": "Prepared meats"
-  }
-}, {
-  "ProductID": 10,
-  "ProductName": "Ikura",
-  "SupplierID": 4,
-  "CategoryID": 8,
-  "QuantityPerUnit": "12 - 200 ml jars",
-  "UnitPrice": 31.0000,
-  "UnitsInStock": 31,
-  "UnitsOnOrder": 0,
-  "ReorderLevel": 0,
-  "Discontinued": false,
-  "Category": {
-    "CategoryID": 8,
-    "CategoryName": "Seafood",
-    "Description": "Seaweed and fish"
-  }
-}, {
-  "ProductID": 11,
-  "ProductName": "Queso Cabrales",
-  "SupplierID": 5,
-  "CategoryID": 4,
-  "QuantityPerUnit": "1 kg pkg.",
-  "UnitPrice": 21.0000,
-  "UnitsInStock": 22,
-  "UnitsOnOrder": 30,
-  "ReorderLevel": 30,
-  "Discontinued": false,
-  "Category": {
-    "CategoryID": 4,
-    "CategoryName": "Dairy Products",
-    "Description": "Cheeses"
-  }
-}, {
-  "ProductID": 12,
-  "ProductName": "Queso Manchego La Pastora",
-  "SupplierID": 5,
-  "CategoryID": 4,
-  "QuantityPerUnit": "10 - 500 g pkgs.",
-  "UnitPrice": 38.0000,
-  "UnitsInStock": 86,
-  "UnitsOnOrder": 0,
-  "ReorderLevel": 0,
-  "Discontinued": false,
-  "Category": {
-    "CategoryID": 4,
-    "CategoryName": "Dairy Products",
-    "Description": "Cheeses"
-  }
-}, {
-  "ProductID": 13,
-  "ProductName": "Konbu",
-  "SupplierID": 6,
-  "CategoryID": 8,
-  "QuantityPerUnit": "2 kg box",
-  "UnitPrice": 6.0000,
-  "UnitsInStock": 24,
-  "UnitsOnOrder": 0,
-  "ReorderLevel": 5,
-  "Discontinued": false,
-  "Category": {
-    "CategoryID": 8,
-    "CategoryName": "Seafood",
-    "Description": "Seaweed and fish"
+  'ProductID': 2,
+  'ProductName': 'Chang',
+  'SupplierID': 1,
+  'CategoryID': 1,
+  'QuantityPerUnit': '24 - 12 oz bottles',
+  'UnitPrice': 19.0000,
+  'UnitsInStock': 17,
+  'UnitsOnOrder': 40,
+  'ReorderLevel': 25,
+  'Discontinued': false,
+  'Category': {
+    'CategoryID': 1,
+    'CategoryName': 'Beverages',
+    'Description': 'Soft drinks, coffees, teas, beers, and ales'
   }
 }];

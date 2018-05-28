@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { products } from './products';
+import { sampleProducts } from './products';
 
 
 @Component({
@@ -8,5 +8,7 @@ import { products } from './products';
 })
 
 export class MaterialsComponent {
-  private gridView: any[] = products;
+  private gridView: any[] = sampleProducts;
+  public isEditable: boolean = false;
+  public showOkButton: boolean = false;
 }

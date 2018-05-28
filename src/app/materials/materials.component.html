@@ -11,17 +11,30 @@
       margin: 30px 60px;"
     >
 
-      <kendo-grid-column field="ProductID" title="ID" [width]="10"></kendo-grid-column>
-      <kendo-grid-column field="ProductName" title="Product" [width]="300"></kendo-grid-column>
+      <kendo-grid-column field="MaterialID" title="ID" [width]="10"></kendo-grid-column>
+      <kendo-grid-column field="MaterialName" title="Product" [width]="300">
+      </kendo-grid-column>
       <ng-template kendoGridDetailTemplate let-dataItem>
-        <section *ngIf="dataItem.Category">
-          <p><strong>In Stock:</strong> {{dataItem.UnitsInStock}} units</p>
-          <p><strong>On Order:</strong> {{dataItem.UnitsOnOrder}} units</p>
-          <p><strong>Reorder Level:</strong> {{dataItem.ReorderLevel}} units</p>
-          <p><strong>Discontinued:</strong> {{dataItem.Discontinued}}</p>
-          <p><strong>Category:</strong> {{dataItem.Category?.CategoryName}} - {{dataItem.Category?.Description}}</p>
-        </section>
-      </ng-template>
+      <section *ngIf="dataItem.SubMaterials" class="material__section">
+        <div class="" *ngIf="!isEditable">
+          <div class="material__item" *ngFor="let item of dataItem.SubMaterials">
+            <a href="#">
+              {{item.content}}
+            </a>
+          </div>
+        </div>
+        <div class="" *ngIf="isEditable">
+          <div class="material__item" *ngFor="let item of dataItem.SubMaterials">
+            <input type="text" value="{{item.content}}" [(ngModel)]="item.content">
+          </div>
+        </div>
+        <div class="controls _right">
+          <button class="button" *ngIf="!showOkButton" (click)="isEditable = !isEditable; showOkButton = true">Edit</button>
+          <button class="button" *ngIf="showOkButton" (click)="showOkButton = false; isEditable = !isEditable;">Ok</button>
+        </div>
+
+      </section>
+    </ng-template>
     </kendo-grid>
   </div>
 

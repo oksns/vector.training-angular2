@@ -3,4 +3,18 @@
   &__title {
     text-align: center;
   }
+
+  &__item {
+    & + & {
+      margin-top: 10px;
+    }
+  }
+
+  &__section {
+    display: flex;
+  }
+}
+
+._right {
+  margin-left: auto;
 }
