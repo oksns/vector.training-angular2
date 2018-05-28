@@ -23,6 +23,10 @@ export const nav = [{
     'route': '/materials'
   },
   {
+    'title': 'ADMIN TOOL',
+    'route': '/admin'
+  },
+  {
     'title': 'LOG OUT',
     'route': '/login'
   }
