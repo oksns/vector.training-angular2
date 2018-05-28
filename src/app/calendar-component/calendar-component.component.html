@@ -1,7 +1,9 @@
-<div class="home__item _margin-left">
-  <h3>Your calendar</h3>
-  <div> debug: is calendar  visible: {{isVisible}} </div><br>
-  <div> debug: roles{{componentRoles}}</div>
-  userRoles
-  <kendo-calendar></kendo-calendar>
+<div class="component-wrapper" [ngClass] = "{'_visible': isVisible}">
+  <div class="home__item _margin-left">
+    <h3>Your calendar</h3>
+    <!--<div> debug: is calendar  visible: {{isVisible}} </div><br>
+    <div> debug: roles{{componentRoles}}</div>
+    userRoles-->
+    <kendo-calendar></kendo-calendar>
+  </div>
 </div>

@@ -24,3 +24,12 @@
   width: 1200px;
   overflow-x: auto;
 }
+
+
+.component-wrapper {
+  display: none;
+
+  &._visible {
+    display: block;
+  }
+}
