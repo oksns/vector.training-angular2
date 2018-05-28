@@ -11,7 +11,7 @@ import {AuthenticationService, User} from './authentication.service';
 
 })
 export class LoginComponent {
-  public user: any = new User('', '');
+  public user: any = new User('', '', []);
   public errorMsg = '';
 
   constructor(
