@@ -1,26 +1,26 @@
 <section class="row body">
   <div class="grid_12">
     <div class="page_header">
-      <h2>Форма входа</h2>
+      <h2>Authorization</h2>
     </div>
   </div>
   <div class="grid_12">
     <div class="container">
       <div id="auth_form"></div>
-      <form class="login-wrapper">
-
-        <div class="login__input">
-          <div>Login:</div>
-          <kendo-maskedtextbox [(value)]="loginInput"></kendo-maskedtextbox>
+      <div class="login-wrapper">
+        <div class="login">
+          <label for="login" class="login__label">Login</label>
+          <input [(ngModel)]="user.login" id="login"
+                 type="login" class="validate login__input">
+          <label for="password" class="login__label">Password</label>
+          <input [(ngModel)]="user.password" id="password"
+                 type="password" class="validate login__input">
         </div>
-
-        <div class="login__input">
-          <div>Password:</div>
-          <kendo-maskedtextbox [(value)]="passwordInput"></kendo-maskedtextbox>
-        </div>
-
-        <button kendoButton type="submit" (click)="onButtonClick(loginInput, passwordInput, login, password)" [primary]="true" [routerLink]="['/home']">LOGIN</button>
-      </form>
+          <span>{{errorMsg}}</span>
+          <button (click)="login()"
+                  class="login__button"
+                  type="submit" name="action">Login</button>
+      </div>
+      </div>
     </div>
-  </div>
 </section>

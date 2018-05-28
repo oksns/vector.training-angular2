@@ -1,30 +1,26 @@
 import { Component, ViewEncapsulation } from '@angular/core';
+import {AuthenticationService, User} from './authentication.service';
 
 @Component({
   selector: 'login-root',
   templateUrl: './login.component.html',
   styleUrls: ['../app.component.scss'],
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None,
+  providers: [AuthenticationService],
 
 
 })
 export class LoginComponent {
+  public user: any = new User('', '');
+  public errorMsg = '';
 
-  public loginInput: string;
-  public passwordInput: string;
+  constructor(
+    private _service: AuthenticationService) {}
 
-  public login: string = "login";
-  public password: string = "1";
-
-  onButtonClick(login, password, realLogin, realPassword) {
-
-    if(login === realLogin && password === realPassword) {
-      console.log('it works!');
-      return true;
+  login() {
+    if(!this._service.login(this.user)){
+      this.errorMsg = 'Failed to login';
     }
-    else {
-      alert('Try another credentials');
-    }
-
   }
+
 }

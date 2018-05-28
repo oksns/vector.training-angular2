@@ -1,11 +1,19 @@
 .login {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
 
     &-wrapper {
-        text-align: center;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
     }
 
-    &__input {
-        margin: 0 0 20px 0;
+  &__label , &__input {
+      margin-top: 5px;
+  }
 
-    }
+  &__button {
+    margin-top: 20px;
+  }
 }
