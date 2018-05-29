@@ -45,6 +45,7 @@ import { CalendarComponentComponent } from './calendar-component/calendar-compon
 import { AbstractRolesComponentComponent } from './abstract-roles-component/abstract-roles-component.component';
 import { RolesSetterComponent } from './roles-setter/roles-setter.component';
 import { AdminToolComponent } from './admin-tool/admin-tool.component';
+import {CoursesComponent} from './courses/courses-component.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -57,6 +58,7 @@ import { AdminToolComponent } from './admin-tool/admin-tool.component';
     ChartsComponentComponent,
     RangeComponentComponent,
     MessagesComponentComponent,
+    CoursesComponent,
     CalendarComponentComponent,
     AbstractRolesComponentComponent,
     RolesSetterComponent,

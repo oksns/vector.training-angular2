@@ -1,18 +1,103 @@
-<div class="component-wrapper" [ngClass] = "{'_visible': isVisible}">
-  <div class="home__item">
-    <h3>Range your lessons</h3>
-   <!-- <div> debug: is Range visible: {{isVisible}} </div>
-    <div> debug: roles{{componentRoles}}</div>-->
-    <div class="container-fluid">
-      <kendo-sortable
-        [navigatable]="true"
-        [animation]="true"
-        [data]="items"
-        class="row"
-        itemClass="item col-xs-6 col-sm-3"
-        activeItemClass="item col-xs-6 col-sm-3 active"
-      >
-      </kendo-sortable>
+<div>
+  <div class="content_part component-wrapper" [ngClass] = "{'_visible': isVisible}" id="student_tests">
+    <h4 style="color: #919191" class="block_title">
+      <a title="My tests"><i style="color: #919191; margin: 0 .5em 0 0" class="fa fa-tasks"></i>My tests</a>
+    </h4>
+    <div class="timetable_wrapper" id="student_tests_inner">
+      <div class="timetable">
+        <div class="timetable_head">
+          <div class="timetable_row">
+            <div style="width: 70%" class="timetable_cell bold">
+              Test
+            </div>
+            <div style="width: 30%" class="timetable_cell bold">
+              The date of creation
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <div class="timetable_body">
+          <div class="timetable_row">
+            <div style="width: 70%" class="timetable_cell_outer" data-head="Test">
+              <div class="timetable_cell_inner">
+                <a>renewal</a>
+              </div>
+            </div>
+            <div style="width: 30%" class="timetable_cell_outer" data-head="The date of creation">
+              <div class="timetable_cell_inner">
+                3/26/2018
+              </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="timetable_row">
+            <div style="width: 70%" class="timetable_cell_outer" data-head="Test">
+              <div class="timetable_cell_inner">
+                <a>Test_2</a>
+              </div>
+            </div>
+            <div style="width: 30%" class="timetable_cell_outer" data-head="The date of creation">
+              <div class="timetable_cell_inner">
+                12/19/2017
+              </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="timetable_row">
+            <div style="width: 70%" class="timetable_cell_outer" data-head="Test">
+              <div class="timetable_cell_inner">
+                <a>Новый тест1</a>
+              </div>
+            </div>
+            <div style="width: 30%" class="timetable_cell_outer" data-head="The date of creation">
+              <div class="timetable_cell_inner">
+                11/9/2017
+              </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="timetable_row">
+            <div style="width: 70%" class="timetable_cell_outer" data-head="Test">
+              <div class="timetable_cell_inner">
+                <a>Новый тестпаа</a>
+              </div>
+            </div>
+            <div style="width: 30%" class="timetable_cell_outer" data-head="The date of creation">
+              <div class="timetable_cell_inner">
+                2/27/2017
+              </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="timetable_row">
+            <div style="width: 70%" class="timetable_cell_outer" data-head="Test">
+              <div class="timetable_cell_inner">
+                <a>Новый тестпр</a>
+              </div>
+            </div>
+            <div style="width: 30%" class="timetable_cell_outer" data-head="The date of creation">
+              <div class="timetable_cell_inner">
+                2/27/2017
+              </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="timetable_row">
+            <div style="width: 70%" class="timetable_cell_outer" data-head="Test">
+              <div class="timetable_cell_inner">
+                <a>Random</a>
+              </div>
+            </div>
+            <div style="width: 30%" class="timetable_cell_outer" data-head="The date of creation">
+              <div class="timetable_cell_inner">
+                2/27/2017
+              </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>

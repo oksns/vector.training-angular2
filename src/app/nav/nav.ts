@@ -32,6 +32,6 @@ export const nav = [{
   {
     'title': 'ADMIN TOOL',
     'route': '/admin',
-    compname: 'NavBarAdminTool'
+    'compname': 'NavBarAdminTool'
   }
 ];

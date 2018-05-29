@@ -1,0 +1,241 @@
+﻿/*timetable nav menu*/
+ul.timetable_menu{
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+ul.timetable_menu > li{
+    display: inline-block;
+    float: left;
+    width: 33.33333333%;
+    margin: 0;
+    text-align: center;
+    height: 30px;
+}
+ul.timetable_menu > li:after,
+ul.timetable_menu > li:first-child:before{
+    content: '/';
+    display: inline-block;
+    float: right;
+    font-size: 1.1em;
+    line-height: 30px;
+}
+ul.timetable_menu > li:first-child:before{
+    float: left;
+}
+ul.timetable_menu > li a{
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    line-height: 30px;
+    color: #395aa1;
+}
+div.timetable_menu_line{
+    display: inline-block;
+    float: left;
+    height: 4px;
+    background: #92278f;
+    width: 33.33333333%;
+}
+
+/*timetable choose styles*/
+.timetable_wrapper > .choose{
+    margin: 10px 0 20px 0;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+.timetable_wrapper > .choose.audience_choose > div{
+    width: 50%;
+    display: inline-block;
+    float: left;
+}
+.timetable_wrapper > .choose.group_choose > div{
+    width: 33.3333333%;
+    display: inline-block;
+    float: left;
+}
+
+/*timetable content styles*/
+.timetable_wrapper > .timetable,
+.timetable_wrapper > .timetable > div{
+    width: 100%;
+    text-align: center;
+}
+.timetable_wrapper > .timetable .timetable_head > .timetable_row,
+.timetable_wrapper > .timetable .timetable_body > .timetable_row{
+    width: 100%;
+    display: block;
+}
+.timetable_wrapper > .timetable .timetable_head > .timetable_row .timetable_cell,
+.timetable_wrapper > .timetable .timetable_body > .timetable_row .timetable_cell_outer{
+    display: inline-block;
+    width: 14.2857142%;
+    float: left;
+    border-right: 1px solid #d6d6d6;
+    border-bottom: 1px solid #d6d6d6;
+    background: #fff;
+    padding: 5px;
+    height: 40px;
+    line-height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.timetable_wrapper > .timetable .timetable_body > .timetable_row .timetable_cell_inner{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+    height: 100%;
+}
+.timetable_wrapper > .timetable .timetable_head > .timetable_row .timetable_cell{
+    background: #395aa1;
+    color: #fff;
+}
+.timetable_wrapper > .timetable .timetable_body > .timetable_row:nth-child(odd) .timetable_cell_outer{
+    background: #f1f1f1;
+}
+.timetable_wrapper > .timetable .timetable_head > .timetable_row .timetable_cell:first-child,
+.timetable_wrapper > .timetable .timetable_body > .timetable_row .timetable_cell_outer:first-child{
+    border-left: 1px solid #d6d6d6;
+}
+.timetable_wrapper > .timetable .timetable_body > .timetable_row .timetable_cell_inner{
+    font-size: .9em;
+}
+
+/*cell tooltips styles*/
+.timetable_wrapper > .timetable .timetable_body > .timetable_row .timetable_cell_outer{
+    position: relative;
+    overflow: visible;
+    white-space: normal;
+    text-overflow: clip;
+}
+.timetable_wrapper > .timetable .timetable_body > .timetable_row .timetable_cell_outer .popup_more{
+    position: absolute;
+    display: block;
+    color: #385191;
+    text-align: left;
+    font-size: .8em;
+    background: #fff;
+    border: 1px solid #395aa1;
+    box-shadow: 0 0 5px 0 #395aa1;
+    padding: 5px;
+    min-width: 100px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    line-height: normal;
+}
+
+
+/***********************************************
+Mobile (portrait 300px)
+***********************************************/
+@media only screen and (max-width: 767px) {
+    /*timetable menu styles*/
+    ul.timetable_menu > li{
+        width: 50%;
+    }
+    ul.timetable_menu > li:last-child{
+        float: none;
+    }
+    ul.timetable_menu > li:after,
+    ul.timetable_menu > li:first-child:before{
+        content: '';
+        display: none;
+    }
+    ul.timetable_menu > li a{
+        line-height: normal;
+    }
+    ul.timetable_menu > li a:hover,
+    ul.timetable_menu > li a.active{
+        color: #92278f;
+    }
+    ul.timetable_menu > li a.active{
+        border-bottom: 2px solid #92278f;
+    }
+    div.timetable_menu_line{
+        display: none;
+    }
+
+    /*timetable choose styles*/
+    .timetable_wrapper > .choose.group_choose > div,
+    .timetable_wrapper > .choose.audience_choose > div{
+        width: 100%;
+        display: inline-block;
+        float: none;
+    }
+
+    /*timetable content styles*/
+    .timetable_wrapper > .timetable .timetable_head > .timetable_row,
+    .timetable_wrapper > .timetable .timetable_body > .timetable_row,
+    .timetable_wrapper > .timetable .timetable_head > .timetable_row .timetable_cell,
+    .timetable_wrapper > .timetable .timetable_body > .timetable_row .timetable_cell_outer,
+    .timetable_wrapper > .timetable .timetable_body > .timetable_row .timetable_cell_inner{
+        display: block;
+    }
+    .timetable_wrapper > .timetable .timetable_head > .timetable_row .timetable_cell:first-child,
+    .timetable_wrapper > .timetable .timetable_body > .timetable_row .timetable_cell_outer:first-child{
+        border-left: none;
+    }
+    .timetable_wrapper > .timetable .timetable_head > .timetable_row{
+        /*hide, but not display: none;*/
+        position: absolute;
+		top: -9999px;
+		left: -9999px;
+    }
+    .timetable_wrapper > .timetable .timetable_body > .timetable_row:first-child{
+        border-top: 10px solid #395aa1;
+    }
+    .timetable_wrapper > .timetable .timetable_body > .timetable_row{
+        border-bottom: 10px solid #395aa1;
+    }
+    .timetable_wrapper > .timetable .timetable_body > .timetable_row:nth-child(odd) .timetable_cell_outer{
+        background: #fff;
+    }
+    .timetable_wrapper > .timetable .timetable_body > .timetable_row .timetable_cell_outer:nth-child(odd){
+        background: #f1f1f1;
+    }
+    .timetable_wrapper > .timetable .timetable_body > .timetable_row .timetable_cell_outer{
+        border-right: none;
+		position: relative;
+		padding-left: 50%; 
+		text-align:left;
+        width: 100%;
+    }
+    .timetable_wrapper > .timetable .timetable_body > .timetable_row .timetable_cell_outer:before{
+		content: attr(data-head);
+        position: absolute;
+        color: #395aa1;
+		top: 1%;
+		left: 1%;
+		width: 45%; 
+		padding: 5px 3% 5px 1%;
+        height: 40px;
+		white-space: nowrap;
+		text-align:left;
+		font-family: 'RobotoBold';
+    }
+
+    /*cell tooltips styles*/
+    .timetable_wrapper > .timetable .timetable_body > .timetable_row .timetable_cell_outer .popup_more{
+        top: 0;
+        left: auto;
+        right: 0;
+    }
+}
+
+
+/***********************************************
+VECTOR STYLES FOR SMALL SCREENS
+***********************************************/
+@media only screen and (max-width: 479px) {
+    .timetable_wrapper,
+    ul.timetable_menu > li a{
+        font-size: .9em;
+    }
+}

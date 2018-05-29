@@ -6,12 +6,13 @@ export class User {
   constructor(
     public login: any,
     public password: any,
-    public roles:string[]) { }
+    public roles: string[]) { }
 }
 
 const users = [
   new User('admin', 'admin', ['admin', 'superuser']),
-  new User('user1@gmail.com', 'a23',['user'])
+  new User('user1', 'a23', ['employee']),
+  new User('teacher', 'tt', ['teacher'])
 ];
 
 @Injectable()

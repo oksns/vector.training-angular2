@@ -12,7 +12,7 @@ export const ROLES_TREE = [
     parent: 'superuser'
   },
   {
-    name: 'teasher',
+    name: 'teacher',
     parent: 'user'
   },
   {
