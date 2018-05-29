@@ -7,7 +7,7 @@ VECTOR LAYOUT STYLES STARTED
 /***********************************************
 Screen 1200px+
 ***********************************************/
-body{
+body.bdsm {
   background: url('../../images/back3_old.jpg') top center no-repeat fixed;
   background-size: cover;
   font-family: 'RobotoRegular', Arial, Verdana, sans-serif;
