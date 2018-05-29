@@ -28,7 +28,7 @@
             <input type="text" value="{{item.content}}" [(ngModel)]="item.content">
           </div>
         </div>
-        <div class="controls _right">
+        <div class="controls _right component-wrapper" [ngClass] = "{'_visible': isVisible}">
           <button class="button" *ngIf="!showOkButton" (click)="isEditable = !isEditable; showOkButton = true">Edit</button>
           <button class="button" *ngIf="showOkButton" (click)="showOkButton = false; isEditable = !isEditable;">Ok</button>
         </div>

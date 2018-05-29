@@ -4,6 +4,7 @@ export const COMPONENT_ROLES = {
   MessagesComponentComponent: ['user', 'employee'],
   CalendarComponentComponent: ['admin'],
   CoursesComponent: ['user', 'teacher', 'employee'],
+  MaterialsComponent: ['admin', 'teacher'],
   NavBarHome: ['user', 'teacher', 'employee'],
   NavBarQuestions: ['user', 'teacher', 'employee'],
   NavBarRoles: [ 'user', 'teacher', 'employee'],
@@ -11,4 +12,4 @@ export const COMPONENT_ROLES = {
   NavBarDepartments: ['user', 'teacher', 'employee'],
   NavBarMaterials: ['user', 'teacher', 'employee'],
   NavBarAdminTool: ['admin', 'superuser']
-}
+};
