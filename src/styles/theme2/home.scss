@@ -3,17 +3,18 @@
   padding: 10px 50px;
 
   &__block {
+    width: 50%;
+
+    &._full-width {
+      width: 100%;
+      padding: 0 20px;
+    }
 
     &._right-col {
-      flex-grow: 1;
 
       & + & {
         margin-top: 20px;
       }
-    }
-
-    &._left-col {
-      flex-grow: 3;
     }
 
     & + & {
