@@ -3,8 +3,7 @@ import {RoleshelperService} from '../roleshelper.service';
 
 @Component({
   selector: 'app-abstract-roles-component',
-  templateUrl: './abstract-roles-component.component.html',
-  styleUrls: ['./abstract-roles-component.component.scss']
+  templateUrl: './abstract-roles-component.component.html'
 })
 export class AbstractRolesComponentComponent implements OnInit {
 

@@ -4,7 +4,6 @@ import {AuthenticationService, User} from './authentication.service';
 @Component({
   selector: 'login-root',
   templateUrl: './login.component.html',
-  styleUrls: ['../app.component.scss'],
   encapsulation: ViewEncapsulation.None,
   providers: [AuthenticationService],
 

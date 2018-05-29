@@ -3,8 +3,7 @@ import {RoleshelperService} from '../roleshelper.service';
 
 @Component({
   selector: 'app-admin-tool',
-  templateUrl: './admin-tool.component.html',
-  styleUrls: ['./admin-tool.component.scss']
+  templateUrl: './admin-tool.component.html'
 })
 export class AdminToolComponent implements OnInit {
 

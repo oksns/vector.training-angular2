@@ -6,7 +6,6 @@ import {RoleshelperService} from "../roleshelper.service";
 @Component({
   selector: 'nav-root',
   templateUrl: './nav.component.html',
-  styleUrls: ['../app.component.scss'],
   encapsulation: ViewEncapsulation.None,
   providers: [AuthenticationService],
 

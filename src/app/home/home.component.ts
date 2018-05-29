@@ -4,7 +4,6 @@ import {RoleshelperService} from '../roleshelper.service';
 @Component({
   selector: 'home-root',
   templateUrl: './home.component.html',
-  styleUrls: ['../app.component.scss'],
   encapsulation: ViewEncapsulation.None
 
 

@@ -3,8 +3,7 @@ import {AbstractRolesComponentComponent} from '../abstract-roles-component/abstr
 
 @Component({
   selector: 'app-messages-component',
-  templateUrl: './messages-component.component.html',
-  styleUrls: ['./messages-component.component.scss']
+  templateUrl: './messages-component.component.html'
 })
 export class MessagesComponentComponent extends AbstractRolesComponentComponent {
 

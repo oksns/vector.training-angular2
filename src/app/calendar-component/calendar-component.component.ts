@@ -3,8 +3,7 @@ import {AbstractRolesComponentComponent} from '../abstract-roles-component/abstr
 
 @Component({
   selector: 'app-calendar-component',
-  templateUrl: './calendar-component.component.html',
-  styleUrls: ['./calendar-component.component.scss']
+  templateUrl: './calendar-component.component.html'
 })
 export class CalendarComponentComponent extends AbstractRolesComponentComponent {
 

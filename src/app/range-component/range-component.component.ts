@@ -3,8 +3,7 @@ import {AbstractRolesComponentComponent} from '../abstract-roles-component/abstr
 
 @Component({
   selector: 'app-range-component',
-  templateUrl: './range-component.component.html',
-  styleUrls: ['./range-component.component.scss']
+  templateUrl: './range-component.component.html'
 })
 export class RangeComponentComponent extends AbstractRolesComponentComponent {
   public items: string[] = [
