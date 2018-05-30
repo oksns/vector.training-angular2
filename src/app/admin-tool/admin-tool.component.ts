@@ -120,4 +120,12 @@ export class AdminToolComponent implements OnInit {
     this.init();
   }
 
+  changeTheme() {
+    let body = document.getElementsByTagName('body');
+    if (body[0].className === '') {
+      body[0].className = 'bdsm';
+    } else {
+      body[0].className = '';
+    }
+  }
 }
