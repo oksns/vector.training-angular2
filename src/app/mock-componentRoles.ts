@@ -5,6 +5,7 @@ export const COMPONENT_ROLES = {
   CalendarComponentComponent: ['admin'],
   CoursesComponent: ['user', 'teacher', 'employee'],
   MaterialsComponent: ['admin', 'teacher'],
+  AdminToolComponent: ['admin', 'superuser'],
   NavBarHome: ['user', 'teacher', 'employee'],
   NavBarQuestions: ['user', 'teacher', 'employee'],
   NavBarRoles: [ 'user', 'teacher', 'employee'],

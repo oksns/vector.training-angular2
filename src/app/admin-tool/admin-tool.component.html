@@ -1,5 +1,5 @@
 <nav-root></nav-root>
-<section class="row body">
+<section class="row body" *ngIf="isVisible">
   <div class="component-wrapper _visible">
     <h4>Theme administration</h4>
     <button (click)="changeTheme()">Change Theme</button>

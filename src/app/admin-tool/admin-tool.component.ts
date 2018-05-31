@@ -1,18 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import {RoleshelperService} from '../roleshelper.service';
+import {AbstractRolesComponentComponent} from "../abstract-roles-component/abstract-roles-component.component";
 
 @Component({
   selector: 'app-admin-tool',
   templateUrl: './admin-tool.component.html'
 })
-export class AdminToolComponent implements OnInit {
+export class AdminToolComponent extends AbstractRolesComponentComponent implements OnInit {
 
   componentsList: string[];
   dataTable;
 
-  constructor(private rolesHelperService: RoleshelperService) {}
-
   ngOnInit() {
+    super.ngOnInit();
     this.init();
   }
 
