@@ -37,4 +37,33 @@
     </tbody>
   </table>
   </div>
+
+  <div class="table-wrapper">
+    <table>
+      <thead>
+      <th>
+        user
+      </th>
+      <th>
+        pass
+      </th>
+      <th>
+        roles
+      </th>
+      </thead>
+      <tbody>
+      <tr *ngFor="let user of userRoles">
+        <td>
+          {{user.login}}
+        </td>
+        <td>
+          ******
+        </td>
+        <td>
+          {{user.roles.toString()}}
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
 </section>

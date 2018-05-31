@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {RoleshelperService} from '../roleshelper.service';
 import {AbstractRolesComponentComponent} from "../abstract-roles-component/abstract-roles-component.component";
+import {USERS_ROLES} from "../mock-users-roles";
 
 @Component({
   selector: 'app-admin-tool',
@@ -10,10 +10,12 @@ export class AdminToolComponent extends AbstractRolesComponentComponent implemen
 
   componentsList: string[];
   dataTable;
+  userRoles;
 
   ngOnInit() {
     super.ngOnInit();
     this.init();
+    this.userRoles = USERS_ROLES;
   }
 
   init() {

@@ -1,6 +1,7 @@
 import {Injectable} from '@angular/core';
 import {Router} from '@angular/router';
 import {RoleshelperService} from "../roleshelper.service";
+import {USERS_ROLES} from "../mock-users-roles";
 
 export class User {
   constructor(
@@ -8,13 +9,6 @@ export class User {
     public password: any,
     public roles: string[]) { }
 }
-
-const users = [
-  new User('admin', 'admin', ['admin', 'superuser']),
-  new User('user1', 'a23', ['employee']),
-  new User('teacher', 'tt', ['teacher'])
-];
-
 @Injectable()
 export class AuthenticationService {
 
@@ -28,7 +22,7 @@ export class AuthenticationService {
     this._router.navigate(['login']);
   }
   login(user) {
-    const authenticatedUser = users.find(u => u.login === user.login);
+    const authenticatedUser = USERS_ROLES.find(u => u.login === user.login);
     if (authenticatedUser && authenticatedUser.password === user.password) {
        localStorage.setItem('user', JSON.stringify(authenticatedUser));
       this.rolesHelperServise.setUserRoles(authenticatedUser.roles);
