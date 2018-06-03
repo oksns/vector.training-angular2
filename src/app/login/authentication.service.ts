@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {Router} from '@angular/router';
-import {RoleshelperService} from "../roleshelper.service";
-import {USERS_ROLES} from "../mock-users-roles";
+import {RoleshelperService} from '../roleshelper.service';
+import {USERS_ROLES} from '../mock-users-roles';
 
 export class User {
   constructor(
